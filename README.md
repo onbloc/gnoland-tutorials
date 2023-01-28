@@ -4,9 +4,13 @@ Welcome to the Gnoland Developer Portal!&#x20;
 
 The purpose of this guide is to invite new developers into the world of Gnolang, a new programming language powering the Gnoland blockchain, by providing all the resources you need to become a Gnolang expert.
 
-_(This is an early-stage, in-progress draft. Your contributions are welcome. Please take a look at the_ [_contribution guidelines_](CONTRIBUTION.md)_.)_
+_(This is an early-stage, in-progress draft. Your contributions are welcome. Please take a look at the_ [_contribution guidelines_](https://github.com/onbloc/tutorial-dev/blob/main/CONTRIBUTION.md)_.)_
 
-If you prefer to read the docs in Gitbook, go [here](https://github.com/onbloc/tutorial-dev/). (This repository is synced with this Gitbook link.)
+Read the docs in Gitbook: [Link](https://onbloc.gitbook.io/gnoland-developer-portal/)
+
+Read the docs in GitHub: [Link](https://github.com/onbloc/gnoland-tutorials)
+
+(The Gitbook and the GitHub repository are synced.)
 
 ## Table of Contents
 
