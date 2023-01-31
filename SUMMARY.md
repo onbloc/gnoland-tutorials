@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Gnoland Developer Portal](README.md)
+* [Developer Portal](README.md)
 
 ## Introduction to Gnoland
 
