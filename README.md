@@ -12,8 +12,6 @@ Read the docs in GitHub: [Link](https://github.com/onbloc/gnoland-tutorials)
 
 (The Gitbook and the GitHub repository are synced.)
 
-> **TODO: Update Table of Contents**
-
 ## Table of Contents
 
 * Introduction to Gnoland
