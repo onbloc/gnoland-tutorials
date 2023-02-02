@@ -12,7 +12,7 @@ $ import "std"
 
 Let's explore some of the most commonly used modules in the library.
 
-## ``[`stdshim`](https://github.com/gnolang/gno/tree/master/stdlibs/stdshim)``
+### ``[`stdshim`](https://github.com/gnolang/gno/tree/master/stdlibs/stdshim)``
 
 ### ``[`banker.gno`](https://github.com/gnolang/gno/blob/master/stdlibs/std/banker.gno)``
 
@@ -46,7 +46,7 @@ type Coin struct {
 }
 ```
 
-## ``[`testing`](https://github.com/gnolang/gno/tree/master/stdlibs/testing)``
+### ``[`testing`](https://github.com/gnolang/gno/tree/master/stdlibs/testing)``
 
 A library that declares `*testing`, which is a tool used for the creation and execution of test cases during the development and testing phase of realms utilizing the `gnodev` CLI tool with the `test` option.
 
