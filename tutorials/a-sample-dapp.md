@@ -1,14 +1,14 @@
-# A Sample Dapp
+# Build a Demo Dapp
 
 This sample is to guide you on how an app interacts with Adena, a wallet built using the Gnoland RPC endpoints. You can play around with a sample dapp [here](https://onbloc.github.io/dapp-example/), you can also find the source [here](https://github.com/onbloc/dapp-example).&#x20;
 
 ### Dapp Example - Demo Project
 
-<figure><img src="../../.gitbook/assets/dapp-demo.png" alt=""><figcaption><p>Dapp Example Demo Image</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/dapp-demo.png" alt=""><figcaption><p>Dapp Example Demo Image</p></figcaption></figure>
 
 ## Project Setup
 
-> Tip: It is recommended that you visit and go through [Wallet Integration](wallet-integration.md) before starting the setup.
+> Tip: It is recommended that you visit and go through [Wallet Integration](../resources/developer-tools/wallet-integration.md) before starting the setup.
 
 Make sure you:
 
@@ -30,6 +30,3 @@ $ npm start
 ```
 $ npm build
 ```
-
-
-

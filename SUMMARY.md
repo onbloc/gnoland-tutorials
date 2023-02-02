@@ -45,10 +45,10 @@
 * [Interact with Gnoland](tutorials/interact-with-gnoland.md)
 * [Start Writing a Realm](tutorials/start-writing-a-realm.md)
 * [Port a Solidity Contract to a Gnolang Realm](tutorials/port-a-solidity-contract-to-a-gnolang-realm.md)
-* [Build a Demo Dapp](tutorials/a-sample-dapp/README.md)
-  * [Wallet Integration](tutorials/a-sample-dapp/wallet-integration.md)
+* [Build a Demo Dapp](tutorials/a-sample-dapp.md)
 
 ## Resources
 
-* [Developer Tools](resources/developer-tools.md)
+* [Developer Tools](resources/developer-tools/README.md)
+  * [Wallet Integration](resources/developer-tools/wallet-integration.md)
 * [Socials](resources/socials.md)

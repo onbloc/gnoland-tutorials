@@ -55,5 +55,5 @@ Read the docs in GitHub: [Link](https://github.com/onbloc/gnoland-tutorials)
   * [Build a Demo Dapp](https://app.gitbook.com/o/Wx3of4okl9pMjsdS6O56/s/O2sBN9qZHR4LU1maMGqi/\~/changes/PfL7CHtuGG7IlVdLLhFD/tutorials/a-sample-dapp)
     * [Wallet Integration](https://app.gitbook.com/o/Wx3of4okl9pMjsdS6O56/s/O2sBN9qZHR4LU1maMGqi/\~/changes/PfL7CHtuGG7IlVdLLhFD/tutorials/a-sample-dapp/wallet-integration)
 * Resources
-  * [Developer Tools](resources/developer-tools.md)
+  * [Developer Tools](resources/developer-tools/)
   * [Socials](resources/socials.md)
