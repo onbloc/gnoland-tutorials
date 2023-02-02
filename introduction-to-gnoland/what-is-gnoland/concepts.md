@@ -31,9 +31,17 @@ During the development and prototyping phase, developers may utilize the `gnodev
 
 Additionally, realms offer the benefit of being able to utilize packages from standard libraries, such as `random`, `maths`, `avl`, and much more
 
-## Tendermint 2
+## Tendermint2
 
-_Work in progress_
+Prior to learning Tendermint2, it is necessary to first understand the basics of Tendermint. Tendermint is a consensus engine that allows developers to build blockchain applications in any programming language with a fast, secure, and predictable consensus algorithm. Tendermint ensures that all nodes in the network agree on the order of transactions, even in the presence of malicious nodes. You can learn more about [Tendermint](https://docs.tendermint.com/) here.
+
+Tendermint2 is a branch of Tendermint that aims to bring the following solutions to the table:
+
+* Simplification of design
+* Keeping total footprint small with minimal code
+* Minimize external dependencies
+* Modularity of components
+* Completeness of software for safety
 
 ## IBC 2
 
@@ -43,6 +51,6 @@ _Work in progress_
 
 _Work in progress_
 
-## Gnoland Virtual Machine (GVM)
+## Gnoland Virtual Machine (GnoVM)
 
 _Work in progress_
