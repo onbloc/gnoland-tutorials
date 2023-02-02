@@ -53,7 +53,7 @@ Read the docs in GitHub: [Link](https://github.com/onbloc/gnoland-tutorials)
   * [Start Writing a Realm](tutorials/start-writing-a-realm.md)
   * [Port a Solidity Contract to a Gnolang Realm](tutorials/port-a-solidity-contract-to-a-gnolang-realm.md)
   * [Build a Demo Dapp](tutorials/a-sample-dapp.md)
-    * [Wallet Integration](resources/developer-tools/wallet-integration.md)
 * Resources
   * [Developer Tools](resources/developer-tools/)
+    * [Wallet Integration](resources/developer-tools/wallet-integration.md)
   * [Socials](resources/socials.md)
