@@ -12,9 +12,9 @@ $ import "std"
 
 Let's explore some of the most commonly used modules in the library.
 
-### ``[`stdshim`](https://github.com/gnolang/gno/tree/master/stdlibs/stdshim)``
+## `stdshim`
 
-### ``[`banker.gno`](https://github.com/gnolang/gno/blob/master/stdlibs/std/banker.gno)``
+### `banker.gno`
 
 A library for manipulating `Coins`. Interfaces that must be implemented when using this library are as follows:
 
@@ -35,7 +35,7 @@ IssueCoin(addr Address, denom string, amount int64)
 RemoveCoin(addr Address, denom string, amount int64)
 ```
 
-### ``[`coins.gno`](https://github.com/gnolang/gno/blob/master/stdlibs/std/coins.gno)``
+### `coins.gno`
 
 A library that declares structs for expressing `Coins`. The struct looks like the following:
 
@@ -46,7 +46,7 @@ type Coin struct {
 }
 ```
 
-### ``[`testing`](https://github.com/gnolang/gno/tree/master/stdlibs/testing)``
+### `testing`
 
 A library that declares `*testing`, which is a tool used for the creation and execution of test cases during the development and testing phase of realms utilizing the `gnodev` CLI tool with the `test` option.
 
