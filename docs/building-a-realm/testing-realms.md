@@ -3,7 +3,7 @@
 There are two methods for testing a realm or package during the development phase.
 
 1. Calling the realm/packages after deploying it on a local network (or testnet3).
-2. Using the `test` option of [`gnodev`](https://app.gitbook.com/o/Wx3of4okl9pMjsdS6O56/s/O2sBN9qZHR4LU1maMGqi/\~/changes/PfL7CHtuGG7IlVdLLhFD/docs/cli/gnodev).
+2. Using the `test` option of [`gnodev`](../cli/gnodev.md).
 
 While the first method is recommended for its accuracy and similarity to the actual deployment environment, it is more efficient to initially utilize the second method for composing test cases and then proceed to the first method if no errors are detected.
 

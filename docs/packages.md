@@ -4,7 +4,7 @@ Packages encompass functionalities that are more closely aligned with the charac
 
 The full list of available packages can be found in [the demo package](https://github.com/gnolang/gno/tree/master/examples/gno.land/p/demo). Below are some of the most commonly used packages.
 
-## ``[`avl`](https://github.com/gnolang/gno/tree/master/examples/gno.land/p/demo/avl)``
+## `avl`
 
 In Golang, the classic key/value data type is represented by the `map` construct. However, while Gnolang also supports the use of `map`, it is not a viable option as it lacks determinism due to its non-sequential nature.
 
@@ -14,7 +14,7 @@ The `avl` package comprises a set of functions that can manipulate the leaves an
 
 Click on [this link](building-a-realm/realm-examples/types.gno.md) for a sample usage of the `avl` package.
 
-## ``[`grc20`](https://github.com/gnolang/gno/tree/master/examples/gno.land/p/demo/grc/grc20)``
+## `grc20`
 
 Gnolang includes an implementation of the `erc20` fungible token standard referred to as `grc20`. The interfaces of `grc20` are as follows:
 
@@ -45,7 +45,7 @@ Two types of contracts exist in`grc20`:
    \- Implements the `IGRC20` interface.\
    \- The underlying struct can be exposed to users. Created with the `GRC20()` method of `adminToken`.
 
-## ``[`grc721`](https://github.com/gnolang/gno/tree/master/examples/gno.land/p/demo/grc/grc721)``
+## `grc721`
 
 Gnolang includes an implementation of the `erc721` non-fungible token standard referred to as `grc721`. The interfaces of `grc721` are as follows:
 
@@ -74,7 +74,7 @@ IsApprovedForAll(owner, operator std.Address) bool
   * You may not set multiple `operator`s.
 * `IsApprovedForAll`: Returns if all NFTs of the `owner` have been approved to the `operator`.
 
-## ``[`testutils`](https://github.com/gnolang/gno/tree/master/examples/gno.land/p/demo/testutils)``
+## `testutils`
 
 The `testutils` package contains a set of functions that comes in handy when testing realms. The sample function below is the commonly used `TestAddress` function that generates a random address.
 

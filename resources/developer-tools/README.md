@@ -6,7 +6,7 @@ Adena is the flagship non-cusotidal wallet of Gnoland. It provides you with a fr
 
 <figure><img src="../../.gitbook/assets/Wallet is ready page.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/52641520 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/52641520.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/52641521.png" alt=""><figcaption></figcaption></figure>
 
