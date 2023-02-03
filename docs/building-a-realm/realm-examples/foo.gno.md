@@ -42,7 +42,7 @@ func assertIsAdmin() error {
 }
 ```
 
-The `asserIsAdmin()` function implements a logic to check if the caller of the admin-only function is the `admin` address. This concept is similar to the `require` or `modifer` in Solidity.
+The `assertIsAdmin()` function implements a logic to check if the caller of the admin-only function is the `admin` address. This concept is similar to the `require` or `modifer` in Solidity.
 
 
 
