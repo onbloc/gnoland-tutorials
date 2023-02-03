@@ -149,9 +149,9 @@ On the other hand, calling the `getPrivateVar()` function using the `gnokey quer
 
 ## TODO
 
-* As of testnet3, we run into unexpected results when using access modifiers with `gnodev`, `maketx`, and `query`. We suspect the cause to be one of the following:
+* As of testnet3, we have run into unexpected results when using access modifiers with `gnodev`, `maketx`, and `query`. We suspect the cause to be one of the following:
   * GnoVM&#x20;
   * Gnokey Query
   * Gnodev
 * As of now, we can get around this error by changing the uppercase to the lowercase to publicly access it.
-* This section will be updated once the cause of this phenomenon.
+* This section will be updated once the cause of this phenomenon is determined.
