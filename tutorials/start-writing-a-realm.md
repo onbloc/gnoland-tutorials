@@ -56,7 +56,7 @@ Due to the immutable nature of blockchain, it's a good practice to run tests on 
 
 Follow the steps in this section to test `contract_test.gno` without interacting with the blockchain using `gnodev`.
 
-You may save your `contract.gno` and `contract_test.gno` files in the same directory of your chosing, for the examples below we'll assume that the contract is stored on the path `~/demo`.
+You must save your `contract.gno` and `contract_test.gno` files in the same directory, and that directory can by any of your chosing. For the examples below we'll assume that the contract is stored in the directory: `~/demo`.
 
 #### Step 1. Build and Run `gnodev`
 
