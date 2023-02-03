@@ -70,8 +70,8 @@ IsApprovedForAll(owner, operator std.Address) bool
   * The `Safe` prefix indicates that the function runs a check to ensure that the `to` address is a valid address that can receive tokens.
   * As you can see from the [code](https://github.com/gnolang/gno/blob/master/examples/gno.land/p/demo/grc/grc721/basic\_nft.gno#L341), the concept of `Safe` has yet to be implemented.
 * `SetApprovalForAll`: Approves all tokens owned by the `owner` to an `operator`.
-* `GetApproved`: Returns the `address` of the `operator` for a token, specified with its `ID`.
   * You may not set multiple `operator`s.
+* `GetApproved`: Returns the `address` of the `operator` for a token, specified with its `ID`.
 * `IsApprovedForAll`: Returns if all NFTs of the `owner` have been approved to the `operator`.
 
 ## `testutils`
