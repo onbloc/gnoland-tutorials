@@ -6,8 +6,8 @@ Libraries can be imported in a manner similar to how libraries are imported in G
 
 An example of importing a `std` library in Gnolang is demonstrated in the following command:
 
-```bash
-$ import "std"
+```go
+import "std"
 ```
 
 Let's explore some of the most commonly used modules in the library.

@@ -169,7 +169,8 @@ You may use your existing account on the Testnet, but you will need to fund it w
 Create a new account with the following command:
 
 ```bash
-$ gnokey add {account_name}
+$ gnokey add {account_name} # creates an address with a new seed phrase
+$ gnokey add {account_name} --recover --index {index} # creates an address using the existing seed phrase
 ```
 
 Then, check its balances on the testnet with the following command:
