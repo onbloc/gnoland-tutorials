@@ -56,7 +56,7 @@ Due to the immutable nature of blockchain, it's a good practice to run tests on 
 
 Follow the steps in this section to test `contract_test.gno` without interacting with the blockchain using `gnodev`.
 
-We'll assume that the contract is stored on the path `~/demo`.
+You must save your `contract.gno` and `contract_test.gno` files in the same directory, and that directory can by any of your chosing. For the examples below we'll assume that the contract is stored in the directory: `~/demo`.
 
 #### Step 1. Build and Run `gnodev`
 
@@ -81,6 +81,8 @@ Test your realm using the following command:
 ```bash
 $ gnodev test ./ --verbose --root-dir ~/gno
 ```
+
+> Note: `./` above assumes you are operating your terminal out of the same directory as your `contract.gno` and `contract_test.gno` files, if not adjust the path accordingly.
 
 <figure><img src="../.gitbook/assets/10_gnodev_test_fail.png" alt=""><figcaption></figcaption></figure>
 
@@ -133,6 +135,8 @@ gnokey maketx addpkg test \
 --pkgdir "." \ 
 --pkgpath "gno.land/r/demo/tutorial_test"
 ```
+
+> Note: `test` above is the account name we used for the recovered account, `--pkgdir` is where the contract to deploy is locally (in our case `~/demo` where the above code assumes the terminal is executing from), `--pkgpath` is the deploy to location.
 
 <figure><img src="../.gitbook/assets/14_gnokey_addpkg.png" alt=""><figcaption></figcaption></figure>
 
