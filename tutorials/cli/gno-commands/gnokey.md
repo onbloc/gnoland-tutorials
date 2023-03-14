@@ -164,13 +164,14 @@ $ gnokey maketx {SUB_COMMAND} {ADDRESS or KeyName}
 This subcommand lets you upload a new package.
 
 ```bash
-$ gnokey maketx addpkg {ADDRESS} \
-    --gas-fee "1ugnot" \
-    --gas-wanted "5000000" \
-    --memo "" \
-    --pkgpath {Registered Realm path} \
-    --pkgdir {Package folder path} \
-    --deposit "" \
+$ gnokey maketx addpkg \
+    -gas-fee "1ugnot" \
+    -gas-wanted "5000000" \
+    -memo "" \
+    -pkgpath {Registered Realm path} \
+    -pkgdir {Package folder path} \
+    -deposit "" \
+    {ADDRESS} \
     > unsigned.tx
 ```
 
@@ -202,15 +203,16 @@ This subcommand lets you call a public function.
 
 ```bash
 # Register
-gnokey maketx call {ADDRESS} \
-    --gas-fee "1000000ugnot" \
-    --gas-wanted "2000000" \
-    --pkgpath "gno.land/r/demo/users" \
-    --send "200000000ugnot" \
-    --func "Register" \
-    --args "" \
-    --args {NAME} \
-    --args "" \
+gnokey maketx call \
+    -gas-fee "1000000ugnot" \
+    -gas-wanted "2000000" \
+    -pkgpath "gno.land/r/demo/users" \
+    -send "200000000ugnot" \
+    -func "Register" \
+    -args "" \
+    -args {NAME} \
+    -args "" \
+    {ADDRESS} \
     > unsigned.tx
 ```
 
@@ -242,12 +244,13 @@ gnokey maketx call {ADDRESS} \
 This subcommand lets you send a native currency to an address.
 
 ```bash
-gnokey maketx send {ADDRESS} \
-    --gas-fee "1ugnot" \
-    --gas-wanted "2000000" \
-    --memo "" \
-    --send {SEND_AMOUNT} \
-    --to {TO_ADDRESS} \
+gnokey maketx send \
+    -gas-fee "1ugnot" \
+    -gas-wanted "2000000" \
+    -memo "" \
+    -send {SEND_AMOUNT} \
+    -to {TO_ADDRESS} \
+    {ADDRESS} \
     > unsigned.tx
 ```
 

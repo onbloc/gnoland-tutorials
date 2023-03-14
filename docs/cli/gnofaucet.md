@@ -29,7 +29,7 @@ $ gnofaucet serve
 ### **Step 1. Create an account named `test1` with the test seed phrase below.**
 
 ```bash
-$ gnokey add test1 --recover
+$ gnokey add -recover test1 
 ```
 
 > **Test Seed Phrase:** source bonus chronic canvas draft south burst lottery vacant surface solve popular case indicate oppose farm nothing bullet exhibit title speed wink action roast
@@ -37,7 +37,7 @@ $ gnokey add test1 --recover
 ### **Step 2. Run `gnofaucet`**
 
 ```bash
-$ gnofaucet serve test1 --chain-id dev --send 500000000ugnot
+$ gnofaucet serve -chain-id dev -send 500000000ugnot test1
 ```
 
 ### **Step 3. Receive GNOTs from the faucet**

@@ -124,10 +124,10 @@ $ gnokey query {QUERY_PATH}
 | ------------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
 | `auth/accounts/{ADDRESS}` | Returns information about an account.                              | `$ gnokey query auth/accounts/g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5`                  |
 | `bank/balances/{ADDRESS}` | Returns balances of an account.                                    | `$ gnokey query bank/balances/g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5`                  |
-| `vm/qfuncs`               | Returns public facing function signatures as JSON.                 | `$ gnokey query vm/qfuncs --data "gno.land/r/demo/boards"`                               |
-| `vm/qfile`                | Returns the file bytes, or list of files if directory.             | `$ gnokey query vm/qfile --data "gno.land/r/demo/boards"`                                |
-| `vm/qrender`              | Calls .Render(\<path>) in readonly mode.                           | `$ gnokey query vm/qrender --data "gno.land/r/demo/boards"`                              |
-| `vm/qeval`                | Evaluates any expression in readonly mode and returns the results. | `$ gnokey query vm/qeval --data "gno.land/r/demo/boards GetBoardIDFromName("my_board")"` |
+| `vm/qfuncs`               | Returns public facing function signatures as JSON.                 | `$ gnokey query vm/qfuncs -data "gno.land/r/demo/boards"`                                |
+| `vm/qfile`                | Returns the file bytes, or list of files if directory.             | `$ gnokey query vm/qfile -data "gno.land/r/demo/boards"`                                 |
+| `vm/qrender`              | Calls .Render(\<path>) in readonly mode.                           | `$ gnokey query vm/qrender -data "gno.land/r/demo/boards"`                               |
+| `vm/qeval`                | Evaluates any expression in readonly mode and returns the results. | `$ gnokey query vm/qeval -data "gno.land/r/demo/boards GetBoardIDFromName("my_board")"`  |
 | `vm/store`                | (not yet supported) Fetches items from the store.                  | -                                                                                        |
 | `vm/package`              | (not yet supported) Fetches a package's files.                     | -                                                                                        |
 
@@ -164,13 +164,14 @@ $ gnokey maketx {SUB_COMMAND} {ADDRESS or KeyName}
 This subcommand lets you upload a new package.
 
 ```bash
-$ gnokey maketx addpkg {ADDRESS} \
-    --gas-fee "1ugnot" \
-    --gas-wanted "5000000" \
-    --memo "" \
-    --pkgpath {Registered Realm path} \
-    --pkgdir {Package folder path} \
-    --deposit "" \
+$ gnokey maketx addpkg \
+    -gas-fee "1ugnot" \
+    -gas-wanted "5000000" \
+    -memo "" \
+    -pkgpath {Registered Realm path} \
+    -pkgdir {Package folder path} \
+    -deposit "" \
+    {ADDRESS} \
     > unsigned.tx
 ```
 
@@ -202,15 +203,16 @@ This subcommand lets you call a public function.
 
 ```bash
 # Register
-gnokey maketx call {ADDRESS} \
-    --gas-fee "1000000ugnot" \
-    --gas-wanted "2000000" \
-    --pkgpath "gno.land/r/demo/users" \
-    --send "200000000ugnot" \
-    --func "Register" \
-    --args "" \
-    --args {NAME} \
-    --args "" \
+gnokey maketx call \
+    -gas-fee "1000000ugnot" \
+    -gas-wanted "2000000" \
+    -pkgpath "gno.land/r/demo/users" \
+    -send "200000000ugnot" \
+    -func "Register" \
+    -args "" \
+    -args {NAME} \
+    -args "" \
+    {ADDRESS} \
     > unsigned.tx
 ```
 
@@ -242,12 +244,13 @@ gnokey maketx call {ADDRESS} \
 This subcommand lets you send a native currency to an address.
 
 ```bash
-gnokey maketx send {ADDRESS} \
-    --gas-fee "1ugnot" \
-    --gas-wanted "2000000" \
-    --memo "" \
-    --send {SEND_AMOUNT} \
-    --to {TO_ADDRESS} \
+gnokey maketx send \
+    -gas-fee "1ugnot" \
+    -gas-wanted "2000000" \
+    -memo "" \
+    -send {SEND_AMOUNT} \
+    -to {TO_ADDRESS} \
+    {ADDRESS} \
     > unsigned.tx
 ```
 
