@@ -237,10 +237,10 @@ Call with the `/blockchain` path to retrieve information about blocks within a s
 
 #### Blockchain Result
 
-| Name          | Type       | Description                  |
-| ------------- | ---------- | ---------------------------- |
-| `last_height` | String     | The latest block height.     |
-| `block_meta`  | Object \[] | The list of block metadatas. |
+| Name          | Type       | Description                 |
+| ------------- | ---------- | --------------------------- |
+| `last_height` | String     | The latest block height.    |
+| `block_meta`  | Object \[] | The list of block metadata. |
 
 ## Get a No. of Unconfirmed Transactions
 
@@ -449,8 +449,8 @@ Call with the `/abci_query` to get information via the ABCI Query.
 #### Query
 
 | Name                      | Description                                                        |
-| ------------------------- | ------------------------------------------------------------------ |
-| `auth/accounts/{ADDRESS}` | Returns the accoutn information.                                   |
+| ------------------------- |--------------------------------------------------------------------|
+| `auth/accounts/{ADDRESS}` | Returns the account information.                                   |
 | `bank/balances/{ADDRESS}` | Returns the balance information about the account.                 |
 | `vm/qfuncs`               | Returns public facing function signatures as JSON.                 |
 | `vm/qfile`                | Returns the file bytes, or list of files if directory.             |

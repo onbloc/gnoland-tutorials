@@ -36,9 +36,9 @@ The `Render` function can be invoked through three distinct methods.
 
 **Method 1. Visiting the website**
 
-<figure><img src="../../.gitbook/assets/img01.png" alt=""><figcaption><p>Calling <code>Render</code> by visting the website</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/img01.png" alt=""><figcaption><p>Calling <code>Render</code> by visiting the website</p></figcaption></figure>
 
-Upon deployment of a realm, the `Render()` function can be invoked by specifying the path on the website, thereby enabling the rendering of markdown text.
+Upon deployment of a realm, the `Render()` function can be invoked by specifying the path on the website, thereby enabling the rendering of Markdown text.
 
 **Method 2. The `maketx call` option using `gnokey`**
 

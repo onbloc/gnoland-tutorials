@@ -2,7 +2,7 @@
 
 ## [Adena Wallet](https://adena.app/)
 
-Adena is the flagship non-cusotidal wallet of Gnoland. It provides you with a friendly interface for creating a wallet, sending transactions, and connecting to dapps.
+Adena is the flagship noncustodial wallet of Gnoland. It provides you with a friendly interface for creating a wallet, sending transactions, and connecting to dapps.
 
 <figure><img src="../../.gitbook/assets/Wallet is ready page.png" alt=""><figcaption></figcaption></figure>
 

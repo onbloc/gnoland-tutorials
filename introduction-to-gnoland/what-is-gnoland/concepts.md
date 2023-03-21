@@ -19,7 +19,7 @@ Gnolang is a specialized programming language designed for the creation of smart
 
 Upon submission of source code to the Gnoland Chain, the GnoVM performs an abstract syntax tree interpretation, which requires developers to provide the original source code for transparency and accountability, in contrast to the use of bytecodes on the Ethereum blockchain.
 
-In the near future, Gnolang will incorporate concepts related to multithreading and concurrency, such as Goroutines and Gochannels, to enhance the development of realms on the Gnoland platform.
+In the near future, Gnolang will incorporate concepts related to multithreading and concurrency, such as Go routines and Go channels, to enhance the development of realms on the Gnoland platform.
 
 ## Realm
 

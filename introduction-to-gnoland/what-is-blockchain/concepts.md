@@ -21,7 +21,7 @@ Cryptocurrencies are digital assets whose transactions are recorded on blockchai
 
 **Coins:** Coins are natively-issued cryptocurrencies of blockchains. These cryptocurrencies are mostly used to pay for using resources of a chain, to vote on its updates or changes, or to secure it via staking. Some examples of coins are Ether for Ethereum, BNB for BSC, ATOM for the Cosmos Hub, and GNOT for Gnoland.
 
-**Tokens:** Tokens are cryptocurrencies issued via smart contracts that define and track their supply and ownership. Tokens are usually created using a standard contract for uniformity and interoperability across dapps. Some examples of token standards are: ERC-20 for Ethereum-based tokens, BEP-20 for BSC-based tokens, CW-20 for Cosmwasm Chain-based tokens, and GRC-20 for Gnoland-based tokens.
+**Tokens:** Tokens are cryptocurrencies issued via smart contracts that define and track their supply and ownership. Tokens are usually created using a standard contract for uniformity and interoperability across dapps. Some examples of token standards are: ERC-20 for Ethereum-based tokens, BEP-20 for BSC-based tokens, CW-20 for CosmWasm Chain-based tokens, and GRC-20 for Gnoland-based tokens.
 
 ## Keys
 
@@ -40,7 +40,7 @@ Gas refers to the cost necessary to execute a transaction on the network. Gas ex
 
 Below are commonly-used terms related to Gas:
 
-* Gas Price: The amount of fee tokens that you’re willing to pay per unit of gas. For example, if your transaction consumes 100,000 gas and you set your gas price as 5 uGNOT (the smallest unit of GNOT), your total fee payment will be 500,000 uGNOT.
+* Gas Price: The amount of fee tokens that you’re willing to pay per unit of gas. For example, if your transaction consumes 100,000 gas, and you set your gas price as 5 uGNOT (the smallest unit of GNOT), your total fee payment will be 500,000 uGNOT.
 * Gas Limit: The upper bound of gas you set for your transaction. Your transaction gets reverted if the gas limit is reached without the transaction being completed. However, if your transaction is successfully completed within the gas limit, the remaining gas gets returned to your wallet.
 
 ## Networks

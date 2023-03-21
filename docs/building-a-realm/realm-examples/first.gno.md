@@ -108,7 +108,7 @@ func ImpossibleInc() {
 
 The code block above displays the function declaration code.
 
-The `get()` function and the `Get()` function are equivalent in functionality, with the exception of the capitalization of the latter, which serves to implement the previously discussed access control mechanism.
+The `get()` function and the `Get()` function are equivalent in functionality, except the capitalization of the latter, which serves to implement the previously discussed access control mechanism.
 
 The `Inc()` function and the `IncByInput()` function are designed to increment the value of `myVar`. Note that the `IncByInput` function specifically obtains the number to be increased, as an argument, from the user.
 

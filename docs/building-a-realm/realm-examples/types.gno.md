@@ -117,7 +117,7 @@ func Test(t *testing.T) {
 
 ```
 
-The AVL Tree is a commonly used package, hence results in a long test case. Let's breakdown the code by segments.
+The AVL Tree is a commonly used package, hence results in a long test case. Let us breakdown the code by segments.
 
 
 
@@ -181,7 +181,7 @@ The AVL Tree is a commonly used package, hence results in a long test case. Let'
 	}
 ```
 
-`GetByIndex(index int) (key string, value interface{})` returns the key and the value of the a node for the given index.
+`GetByIndex(index int) (key string, value interface{})` returns the key and the value of the node for the given index.
 
 
 
