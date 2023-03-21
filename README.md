@@ -6,7 +6,7 @@ The purpose of this guide is to invite new developers into the world of Gnolang,
 
 _(This is an early-stage, in-progress draft. Your contributions are welcome. Please take a look at the_ [_contribution guidelines_](https://github.com/onbloc/gnoland-tutorials/blob/main/CONTRIBUTION.md)_.)_
 
-You can read the docs in [Gitbook](https://onbloc.gitbook.io/gnoland-developer-portal/) or [Github](https://github.com/onbloc/gnoland-tutorials).
+You can read the docs in [Gitbook](https://onbloc.gitbook.io/gnoland-developer-portal/) or [GitHub](https://github.com/onbloc/gnoland-tutorials).
 
 
 ## Table of Contents

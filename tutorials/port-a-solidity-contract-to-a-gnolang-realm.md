@@ -150,7 +150,7 @@ These are the basic concepts of the Simple Auction contract:
 
 * Everyone can send their bids during a bidding period.
 * The bids already include sending money / Ether in order to bind the bidders to their bids.
-* If the highest bid is raised, the previously highest bidder gets their money back.
+* If the highest bid is raised, the previous highest bidder gets their money back.
 * After the end of the bidding period, the contract has to be called manually for the beneficiary to receive their money - contracts cannot activate themselves.
 
 The contract consists of:

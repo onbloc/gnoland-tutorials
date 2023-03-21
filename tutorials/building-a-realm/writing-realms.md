@@ -7,7 +7,7 @@ Before diving in, let's compare realms to packages to clarify their differences.
 * Smart contracts written in Gnolang.
 * Realms are stateful.
 * The default import path is `gno.land/r/~~~`.
-* The realm exposes a unique function called `Render()`, which performs rendering through markdown syntax.
+* The realm exposes a unique function called `Render()`, which performs rendering through Markdown syntax.
 
 ### **Packages**
 
@@ -18,7 +18,7 @@ Before diving in, let's compare realms to packages to clarify their differences.
 
 ## `Render`
 
-As previously stated, the `Render()` supports markdown syntax. A sample code is as follows.
+As previously stated, the `Render()` supports Markdown syntax. A sample code is as follows.
 
 ```go
 package demo
@@ -36,9 +36,9 @@ The `Render` function can be invoked through three distinct methods.
 
 ### **1. Visiting the website**
 
-<figure><img src="../../.gitbook/assets/img01.png" alt=""><figcaption><p>Calling <code>Render</code> by visting the website</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/img01.png" alt=""><figcaption><p>Calling <code>Render</code> by visiting the website</p></figcaption></figure>
 
-Upon deployment of a realm, the `Render()` function can be invoked by specifying the path on the website, thereby enabling the rendering of markdown text.
+Upon deployment of a realm, the `Render()` function can be invoked by specifying the path on the website, thereby enabling the rendering of Markdown text.
 
 ### **2. The `maketx call` option using `gnokey`**
 

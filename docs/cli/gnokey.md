@@ -74,7 +74,7 @@ $ gnokey delete {KEY_NAME}
 
 ## Export an Encrypted Private Key
 
-Export an a private key's encrypted armor using the following command.
+Export a private key's encrypted armor using the following command.
 
 ```bash
 $ gnokey export
@@ -310,7 +310,7 @@ $ gnokey verify
 
 ## Broadcast a Signed Document
 
-Braodcast a signed document with the following command.
+Broadcast a signed document with the following command.
 
 ```bash
 $ gnokey broadcast {signed transaction file document}

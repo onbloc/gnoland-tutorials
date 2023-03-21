@@ -88,7 +88,7 @@ The argument can be specified in the URL with the colon `:`.
 
 The image above is an example of calling the function using `maketx call`.
 
-It should be noted that when the `(path string)` argument is declared within the realm code, an failure to explicitly include an empty argument will result in an inability to successfully execute the function.
+It should be noted that when the `(path string)` argument is declared within the realm code, a failure to explicitly include an empty argument will result in an inability to successfully execute the function.
 
 The drawback of using the `maketx call` method is that it consumes gas, as it creates an actual transaction on the network.
 
@@ -98,7 +98,7 @@ Functions that make changes to the state must have a subject for change, hence m
 
 <figure><img src="../../../.gitbook/assets/gor_01_05_qrender.png" alt=""><figcaption></figcaption></figure>
 
-This method involves seemingly less options compared to `gnokey maketx call` method. However, passing the argument can be quite confusing: the realm path that exposes the `Render()` function must be placed in the `--data` option, and the arguments in a new line (`\n`).
+This method involves seemingly fewer options compared to `gnokey maketx call` method. However, passing the argument can be quite confusing: the realm path that exposes the `Render()` function must be placed in the `--data` option, and the arguments in a new line (`\n`).
 
 
 
