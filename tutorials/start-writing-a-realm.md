@@ -109,7 +109,7 @@ $ make gnokey
 Then, import the account with the following command (remember to use the seed phrase we shared above):
 
 ```bash
-$ gnokey add {account_name} --recover
+$ gnokey add -recover {account_name} 
 ```
 
 <figure><img src="../.gitbook/assets/12_gnokey_build_recover.png" alt=""><figcaption></figcaption></figure>
@@ -127,13 +127,14 @@ $ gnokey query "auth/accounts/{account_address}"
 Deploy the realm on your local network with the following command:
 
 ```bash
-gnokey maketx addpkg test \
---deposit "1ugnot" \
---gas-fee "1ugnot" \
---gas-wanted "5000000" \
---broadcast "true" \
---pkgdir "." \ 
---pkgpath "gno.land/r/demo/tutorial_test"
+gnokey maketx addpkg \
+-deposit "1ugnot" \
+-gas-fee "1ugnot" \
+-gas-wanted "5000000" \
+-broadcast "true" \
+-pkgdir "." \ 
+-pkgpath "gno.land/r/demo/tutorial_test"
+test
 ```
 
 > Note: `test` above is the account name we used for the recovered account, `--pkgdir` is where the contract to deploy is locally (in our case `~/demo` where the above code assumes the terminal is executing from), `--pkgpath` is the deploy-to location.
@@ -170,13 +171,13 @@ Create a new account with the following command:
 
 ```bash
 $ gnokey add {account_name} # creates an address with a new seed phrase
-$ gnokey add {account_name} --recover --index {index} # creates an address using the existing seed phrase
+$ gnokey add -recover -index {index} {account_name} # creates an address using the existing seed phrase
 ```
 
 Then, check its balances on the testnet with the following command:
 
 ```bash
-$ gnokey query bank/balances/{your_address} --remote "http://test3.gno.land:36657"
+$ gnokey query bank/balances/{your_address} -remote "http://test3.gno.land:36657"
 ```
 
 <figure><img src="../.gitbook/assets/18_gnokey_new_addr_test3_balance.png" alt=""><figcaption></figcaption></figure>

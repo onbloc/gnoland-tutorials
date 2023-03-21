@@ -13,7 +13,7 @@ In order to interact with Gnoland, you need an account that you will use to sign
 ```bash
 $ gnokey generate # create a new seed phrase (mnemonic)
 
-$ gnokey add {your_account_name} --recover  # registers a key with the name set as the value you put in {your_account_name} with a seed phrase
+$ gnokey add -recover {your_account_name}  # registers a key with the name set as the value you put in {your_account_name} with a seed phrase
 
 $ gnokey list # check the list of keys
 ```
@@ -21,18 +21,19 @@ $ gnokey list # check the list of keys
 ## Register As a User
 
 ```bash
-$ gnokey maketx call my-account \
-    --gas-fee "1000000ugnot" \
-    --gas-wanted "2000000" \
-    --pkgpath "gno.land/r/demo/users" \
-    --broadcast \
-    --send "200000000ugnot" \
-    --func "Register" \
-    --args "" \
-    --args "my_account" \ # (must be at least 6 characters, lowercase alphanumeric with underscore)
-    --args "" \
-    --chainid "test3" \
-    --remote "test3.gno.land:36657"
+$ gnokey maketx call \
+    -gas-fee "1000000ugnot" \
+    -gas-wanted "2000000" \
+    -pkgpath "gno.land/r/demo/users" \
+    -broadcast \
+    -send "200000000ugnot" \
+    -func "Register" \
+    -args "" \
+    -args "my_account" \ # (must be at least 6 characters, lowercase alphanumeric with underscore)
+    -args "" \
+    -chainid "test3" \
+    -remote "test3.gno.land:36657"
+    my-account 
 
 # username: must be at least 6 characters, lowercase alphanumeric with underscore
 ```
@@ -43,14 +44,14 @@ $ gnokey maketx call my-account \
 
 ```bash
 # Get account information
-$ gnokey query auth/accounts/{address} --remote "test3.gno.land:36657"
+$ gnokey query auth/accounts/{address} -remote "test3.gno.land:36657"
 
 # Get account balance
-$ gnokey query bank/balances/{address} --remote "test3.gno.land:36657"
+$ gnokey query bank/balances/{address} -remote "test3.gno.land:36657"
 
 # Get /r/demo/boards user information
-$ gnokey query vm/qrender --data "gno.land/r/demo/users
-my_account" --remote "test3.gno.land:36657"
+$ gnokey query vm/qrender -data "gno.land/r/demo/users
+my_account" -remote "test3.gno.land:36657"
 ```
 
 ## Send Tokens
@@ -59,15 +60,16 @@ The following command will send 1,000,000 ugnot (= 1 GNOT) to the address specif
 
 ```bash
 # Creates and broadcast a token transfer transaction
-$ gnokey maketx send my-account \
-    --gas-fee "1ugnot" \
-    --gas-wanted "2000000" \
-    --memo "" \
-    --broadcast \
-    --send "1000000ugnot" \
-    --to "{address}" \
-    --chainid "test3" \
-    --remote "test3.gno.land:36657"
+$ gnokey maketx \
+    -gas-fee "1ugnot" \
+    -gas-wanted "2000000" \
+    -memo "" \
+    -broadcast \
+    -send "1000000ugnot" \
+    -to "{address}" \
+    -chainid "test3" \
+    -remote "test3.gno.land:36657" \
+    send my-account 
 ```
 
 ## Create a Board
@@ -76,14 +78,15 @@ Try creating a board called `my_board` on the `gno.land/r/demo/boards` realm wit
 
 ```bash
 # Calls the CreateBoard function of gno.land/r/demo/boards
-$ gnokey maketx call my-account \
-    --gas-fee "1000000ugnot" \
-    --gas-wanted "10000000" \
-    --broadcast \
-    --pkgpath "gno.land/r/demo/boards" \
-    --send "" \
-    --func "CreateBoard" \
-    --args "my_board" \
-    --chainid "test3" \
-    --remote "test3.gno.land:36657"
+$ gnokey maketx call \
+    -gas-fee "1000000ugnot" \
+    -gas-wanted "10000000" \
+    -broadcast \
+    -pkgpath "gno.land/r/demo/boards" \
+    -send "" \
+    -func "CreateBoard" \
+    -args "my_board" \
+    -chainid "test3" \
+    -remote "test3.gno.land:36657" \
+    my-account 
 ```
