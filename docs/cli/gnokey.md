@@ -90,11 +90,11 @@ $ gnokey export
 
 #### **Example Result - Encrypted**
 
-<figure><img src="../../../.gitbook/assets/2-11-enc.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2-11-enc-fix.png" alt=""><figcaption></figcaption></figure>
 
 #### **Example Result - Unencrypted**
 
-<figure><img src="../../../.gitbook/assets/2-11-dec.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2-11-dec-fix.png" alt=""><figcaption></figcaption></figure>
 
 ## Import a Private Key (Encrypted & Unencrypted)
 
@@ -114,11 +114,11 @@ $ gnokey import
 
 #### **Example Result - Encrypted**
 
-<figure><img src="../../../.gitbook/assets/2-12-enc.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2-12-enc-fix.png" alt=""><figcaption></figcaption></figure>
 
 #### **Example Result - Unencrypted**
 
-<figure><img src="../../../.gitbook/assets/2-12-dec.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2-12-dec-fix.png" alt=""><figcaption></figcaption></figure>
 
 ## Make an ABCI Query
 
