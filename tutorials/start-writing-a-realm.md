@@ -184,11 +184,9 @@ $ gnokey query -remote="http://test3.gno.land:36657" bank/balances/{your_address
 
 #### Step 2. Receive Testnet GNOTs from the Faucet
 
-We're going to use a faucet developed by a community member that you may interact with on this [website](https://app.gno.tools/faucet).
 
-<figure><img src="../.gitbook/assets/19_gian_faucet.png" alt=""><figcaption></figcaption></figure>
+As of now, the official GNOT faucet is under maintenance. Please visit [the official Gnoland Server on Discord](https://discord.gg/3YbdqVP8Tb) and request for testnet tokens from the community members.
 
-Copy and paste your wallet address in the **Address** field and click on **Get test tokens** to receive some Testnet GNOTs.
 
 #### Step 3. Check Your New Balance
 
