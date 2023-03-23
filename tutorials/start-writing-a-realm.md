@@ -177,7 +177,7 @@ $ gnokey add -recover -index {index} {account_name}  # creates an address using 
 Then, check its balances on the testnet with the following command:
 
 ```bash
-$ gnokey query -remote="http://test3.gno.land:36657" bank/balances/{your_address}
+$ gnokey query -remote="test3.gno.land:36657" bank/balances/{your_address}
 ```
 
 <figure><img src="../.gitbook/assets/18_gnokey_new_addr_test3_balance.png" alt=""><figcaption></figcaption></figure>
@@ -193,7 +193,7 @@ As of now, the official GNOT faucet is under maintenance. Please visit [the offi
 Confirm that your wallet has received Testnet GNOTs with the following command:
 
 ```bash
-$ gnokey query bank/balances/{your_address} --remote http://test3.gno.land:36657
+$ gnokey query -remote="test3.gno.land:36657" bank/balances/{your_address}
 ```
 
 <figure><img src="../.gitbook/assets/20_310_balance.png" alt=""><figcaption></figcaption></figure>
@@ -204,7 +204,7 @@ We can see that you now have 310 Testnet GNOTS in your wallet.
 
 We're going to be using the same commands that we used to deploy our realm in a local environment. However, we need to configure two options to set our target network to the Testnet.&#x20;
 
-- `remote` => `"http://test3.gno.land:36657"`
+- `remote` => `"test3.gno.land:36657"`
 - `chainid` => `"test3"`
 
 <figure><img src="../.gitbook/assets/21_test3_deploy.png" alt=""><figcaption></figcaption></figure>
