@@ -295,7 +295,7 @@ func assertGRC20Balance(t *testing.T, addr users.AddressOrName, expectedBal uint
 }
 ```
 
-> **Tip:** the `boards` realm enables users to [register addresses with usernames](https://onbloc.gitbook.io/gnoland-developer-portal/tutorials/cli/cli-examples#register-as-a-user) on  `/r/demo/boards` for simplicity and convenience.&#x20;
+> **Tip:** the `users` realm enables users to register addresses with usernames([example](https://onbloc.gitbook.io/gnoland-developer-portal/tutorials/interact-with-gnoland#register-as-a-user)) on  `/r/demo/users` for simplicity and convenience.&#x20;
 
 
 

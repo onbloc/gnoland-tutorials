@@ -4,8 +4,8 @@ This tutorial will provide you with a step-by-step guide on how to set up a loca
 
 ## Prerequisites
 
-* [Initial Setup](../docs/environment-setup/initial-setup.md)
-* [Build the Local Testnet](../docs/environment-setup/build-the-local-testnet.md)
+- [Initial Setup](../docs/environment-setup/initial-setup.md)
+- [Build the Local Testnet](../docs/environment-setup/build-the-local-testnet.md)
 
 ## Locally Building a Realm
 
@@ -48,8 +48,6 @@ func Test(t *testing.T) {
 }
 ```
 
-
-
 ### Testing with `gnodev`
 
 Due to the immutable nature of blockchain, it's a good practice to run tests on `gnodev` prior to deploying your realm on the testnet.&#x20;
@@ -79,7 +77,7 @@ $ gnodev
 Test your realm using the following command:
 
 ```bash
-$ gnodev test ./ --verbose --root-dir ~/gno
+$ gnodev test -verbose=true -root-dir ~/gno ./
 ```
 
 > Note: `./` above assumes you are operating your terminal out of the same directory as your `contract.gno` and `contract_test.gno` files, if not adjust the path accordingly.
@@ -90,7 +88,7 @@ We can see that the test has failed. Try to find out what went wrong with our te
 
 <figure><img src="../.gitbook/assets/11_gnodev_test_ok.png" alt=""><figcaption></figcaption></figure>
 
-Once you fix the errors and re-run the test, you can confirm that the results are now displayed as  `PASS`, indicating that your realm is ready to be deployed on the blockchain.
+Once you fix the errors and re-run the test, you can confirm that the results are now displayed as `PASS`, indicating that your realm is ready to be deployed on the blockchain.
 
 ### Deploying Locally
 
@@ -109,7 +107,7 @@ $ make gnokey
 Then, import the account with the following command (remember to use the seed phrase we shared above):
 
 ```bash
-$ gnokey add {account_name} --recover
+$ gnokey add -recover {account_name}
 ```
 
 <figure><img src="../.gitbook/assets/12_gnokey_build_recover.png" alt=""><figcaption></figcaption></figure>
@@ -127,16 +125,19 @@ $ gnokey query "auth/accounts/{account_address}"
 Deploy the realm on your local network with the following command:
 
 ```bash
-gnokey maketx addpkg test \
---deposit "1ugnot" \
---gas-fee "1ugnot" \
---gas-wanted "5000000" \
---broadcast "true" \
---pkgdir "." \ 
---pkgpath "gno.land/r/demo/tutorial_test"
+gnokey maketx addpkg  \
+-deposit="1ugnot" \
+-gas-fee="1ugnot" \
+-gas-wanted="5000000" \
+-broadcast="true" \
+-remote="localhost:26657" \
+-chainid="dev" \
+-pkgdir="." \
+-pkgpath="gno.land/r/demo/tutorial_test" \
+test
 ```
 
-> Note: `test` above is the account name we used for the recovered account, `--pkgdir` is where the contract to deploy is locally (in our case `~/demo` where the above code assumes the terminal is executing from), `--pkgpath` is the deploy-to location.
+> Note: `test` above is the account name we used for the recovered account, `--pkgdir` is where the contract to deploy is locally (in our case `/Users/n3wbie/Desktop/study/gnolang/gor/77_demo/src` where the above code assumes the terminal is executing from), `--pkgpath` is the deploy-to location.
 
 <figure><img src="../.gitbook/assets/14_gnokey_addpkg.png" alt=""><figcaption></figcaption></figure>
 
@@ -148,7 +149,7 @@ Once you successfully deploy the realm, visit `localhost:8888/{pkgpath}?help` on
 
 There are two ways to call your deployed function using `gnokey`.
 
-#### Method 1. `gnokey make tx call`
+#### Method 1. `gnokey maketx call`
 
 This method will execute a transaction to call a function in a realm. Note that this method is used for state-changing functions as it consumes gas.
 
@@ -170,13 +171,13 @@ Create a new account with the following command:
 
 ```bash
 $ gnokey add {account_name} # creates an address with a new seed phrase
-$ gnokey add {account_name} --recover --index {index} # creates an address using the existing seed phrase
+$ gnokey add -recover -index {index} {account_name}  # creates an address using the existing seed phrase
 ```
 
 Then, check its balances on the testnet with the following command:
 
 ```bash
-$ gnokey query bank/balances/{your_address} --remote "http://test3.gno.land:36657"
+$ gnokey query -remote="http://test3.gno.land:36657" bank/balances/{your_address}
 ```
 
 <figure><img src="../.gitbook/assets/18_gnokey_new_addr_test3_balance.png" alt=""><figcaption></figcaption></figure>
@@ -205,13 +206,13 @@ We can see that you now have 310 Testnet GNOTS in your wallet.
 
 We're going to be using the same commands that we used to deploy our realm in a local environment. However, we need to configure two options to set our target network to the Testnet.&#x20;
 
-* `remote` => `"http://test3.gno.land:36657"`
-* `chainid` => `"test3"`
+- `remote` => `"http://test3.gno.land:36657"`
+- `chainid` => `"test3"`
 
 <figure><img src="../.gitbook/assets/21_test3_deploy.png" alt=""><figcaption></figcaption></figure>
 
-#### Step 5. [Check on Gnoscan](https://gnoscan.io/accounts/g1354kqcxeyydngzjrgfr5h0llepmhtuc9m92hhr)
+#### Step 5. [Check on Gnoscan](https://gnoscan.io/accounts/g1k266pn5usuwhjqah3kn5c5668qsnwspy9p0v8s)
 
 Confirm that your realm has been published by checking your transaction history on Testnet 3 on [Gnoscan](https://gnoscan.io/).
 
-<figure><img src="../.gitbook/assets/21_gnoscan.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/23_gnoscan.png" alt=""><figcaption></figcaption></figure>
