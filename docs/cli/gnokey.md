@@ -85,7 +85,7 @@ $ gnokey export
 | Name          | Type   | Description                                          |
 | ------------- | ------ | ---------------------------------------------------- |
 | `key`         | String | Name or Bech32 address of the private key            |
-| `output-path` | String | The desired output path for the encrypted armor file |
+| `output-path` | String | The desired output path for the armor file           |
 | `unsafe`      | Bool   | Export the private key armor as unencrypted          |
 
 #### **Example Result - Encrypted**
