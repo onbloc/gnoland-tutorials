@@ -24,16 +24,16 @@ $ gnokey add {KEY_NAME}
 
 | Name        | Type       | Description                                                                            |
 | ----------- | ---------- | -------------------------------------------------------------------------------------- |
+| `account`   | UInt       | Account number for HD derivation.                                                      |
+| `dryrun`    | Boolean    | Performs action, but doesn't add key to local keystore.                                |
+| `index`     | UInt       | Address index number for HD derivation.                                                |
+| `ledger`    | Boolean    | Stores a local reference to a private key on a Ledger device.                          |
 | `multisig`  | String \[] | Constructs and stores a multisig public key (implies `--pubkey`).                      |
-| `threshold` | Int        | K out of N required signatures. For use in conjunction with --multisig (default: `1`). |
+| `nobackup`  | Boolean    | Doesn't print out seed phrase (if others are watching the terminal).                   |
 | `nosort`    | Boolean    | Keys passed to `--multisig` are taken in the order they're supplied.                   |
 | `pubkey`    | String     | Parses a public key in bech32 format and save it to disk.                              |
-| `ledger`    | Boolean    | Stores a local reference to a private key on a Ledger device.                          |
 | `recover`   | Boolean    | Provides seed phrase to recover existing key instead of creating.                      |
-| `nobackup`  | Boolean    | Doesn't print out seed phrase (if others are watching the terminal).                   |
-| `dryrun`    | Boolean    | Performs action, but doesn't add key to local keystore.                                |
-| `account`   | UInt       | Account number for HD derivation.                                                      |
-| `index`     | UInt       | Address index number for HD derivation.                                                |
+| `threshold` | Int        | K out of N required signatures. For use in conjunction with --multisig (default: `1`). |
 
 #### **Example Result**
 
@@ -72,9 +72,9 @@ $ gnokey delete {KEY_NAME}
 
 <figure><img src="../../../.gitbook/assets/2-10.png" alt=""><figcaption></figcaption></figure>
 
-## Export an Encrypted Private Key
+## Export a Private Key (Encrypted & Unencrypted)
 
-Export a private key's encrypted armor using the following command.
+Export a private key's (encrypted or unencrypted) armor using the following command.
 
 ```bash
 $ gnokey export
@@ -85,15 +85,20 @@ $ gnokey export
 | Name          | Type   | Description                                          |
 | ------------- | ------ | ---------------------------------------------------- |
 | `key`         | String | Name or Bech32 address of the private key            |
-| `output-path` | String | The desired output path for the encrypted armor file |
+| `output-path` | String | The desired output path for the armor file           |
+| `unsafe`      | Bool   | Export the private key armor as unencrypted          |
 
-#### **Example Result**
+#### **Example Result - Encrypted**
 
-<figure><img src="../../../.gitbook/assets/2-11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2-11-enc-fix.png" alt=""><figcaption></figcaption></figure>
 
-## Import an Encrypted Private Key
+#### **Example Result - Unencrypted**
 
-Import a private key's encrypted armor with the following command.
+<figure><img src="../../../.gitbook/assets/2-11-dec-fix.png" alt=""><figcaption></figcaption></figure>
+
+## Import a Private Key (Encrypted & Unencrypted)
+
+Import a private key's (encrypted or unencrypted) armor with the following command.
 
 ```bash
 $ gnokey import
@@ -101,14 +106,19 @@ $ gnokey import
 
 #### **Options**
 
-| Name         | Type   | Description                           |
-| ------------ | ------ | ------------------------------------- |
-| `name`       | String | The name of the private key.          |
-| `armor-path` | String | The path to the encrypted armor file. |
+| Name         | Type   | Description                                 |
+| ------------ | ------ | ------------------------------------------- |
+| `armor-path` | String | The path to the encrypted armor file.       |
+| `name`       | String | The name of the private key.                |
+| `unsafe`     | Bool   | Import the private key armor as unencrypted |
 
-#### **Example Result**
+#### **Example Result - Encrypted**
 
-<figure><img src="../../../.gitbook/assets/2-12.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2-12-enc-fix.png" alt=""><figcaption></figcaption></figure>
+
+#### **Example Result - Unencrypted**
+
+<figure><img src="../../../.gitbook/assets/2-12-dec-fix.png" alt=""><figcaption></figcaption></figure>
 
 ## Make an ABCI Query
 
@@ -164,13 +174,13 @@ $ gnokey maketx {SUB_COMMAND} {ADDRESS or KeyName}
 This subcommand lets you upload a new package.
 
 ```bash
-$ gnokey maketx addpkg {ADDRESS} \
-    --gas-fee "1ugnot" \
-    --gas-wanted "5000000" \
-    --memo "" \
-    --pkgpath {Registered Realm path} \
-    --pkgdir {Package folder path} \
-    --deposit "" \
+$ gnokey maketx addpkg \
+    -deposit="1ugnot" \
+    -gas-fee="1ugnot" \
+    -gas-wanted="5000000" \
+    -pkgpath={Registered Realm path} \
+    -pkgdir={Package folder path} \
+    {ADDRESS} \
     > unsigned.tx
 ```
 
@@ -202,15 +212,16 @@ This subcommand lets you call a public function.
 
 ```bash
 # Register
-gnokey maketx call {ADDRESS} \
-    --gas-fee "1000000ugnot" \
-    --gas-wanted "2000000" \
-    --pkgpath "gno.land/r/demo/users" \
-    --send "200000000ugnot" \
-    --func "Register" \
-    --args "" \
-    --args {NAME} \
-    --args "" \
+gnokey maketx call \
+    -gas-fee="1ugnot" \
+    -gas-wanted="5000000" \
+    -pkgpath="gno.land/r/demo/users" \
+    -send="200000000ugnot" \
+    -func="Register" \
+    -args="" \
+    -args={NAME} \
+    -args="" \
+    {ADDRESS} \
     > unsigned.tx
 ```
 
@@ -242,12 +253,12 @@ gnokey maketx call {ADDRESS} \
 This subcommand lets you send a native currency to an address.
 
 ```bash
-gnokey maketx send {ADDRESS} \
-    --gas-fee "1ugnot" \
-    --gas-wanted "2000000" \
-    --memo "" \
-    --send {SEND_AMOUNT} \
-    --to {TO_ADDRESS} \
+gnokey maketx send \
+    -gas-fee="1ugnot" \
+    -gas-wanted="5000000" \
+    -send={SEND_AMOUNT} \
+    -to={TO_ADDRESS} \
+    {ADDRESS} \
     > unsigned.tx
 ```
 
