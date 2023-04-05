@@ -1,5 +1,13 @@
 # Terminology
 
+## Gno.land
+
+Gno.land is a layer-1 blockchain that integrates various cutting-edge technologies, including Tendermint2, GnoVM, Proof-of-Contributions consensus mechanism, on-chain governance through a new DAO framework with support for sub-DAOs, and a unique licensing model that allows open-source code to be monetized by default.
+
+Gno.land aims to offer security, high-quality contract libraries, and scalability to other Gnolang chains, while also prioritizing interoperability with existing and emerging chains.
+
+Post mainnet launch, Gno.land aims to integrate IBCv1 to connect with existing Cosmos chains and implement ICS1 for security through the existing chains. Afterwards, the platform plans to improve IBC by adding new capabilities for interchain smart-contracts.
+
 ## Gnolang
 
 Gnolang is the main programming language used across the tech stacks that power the Gnoland blockchain. Gnolang can be thought of as an interpreted version of Golang. As Gnolang is approximately 99% identical to Golang, it allows developers to utilize the rich libraries of Golang to greatly simplify application development.
@@ -10,7 +18,7 @@ If you're interested in becoming a contributor to this novel language, visit the
 
 ## Gnoland Virtual Machine (GnoVM)
 
-_Work in progress_
+GnoVM is a virtual machine that interprets Gnolang, a custom version of Golang optimized for blockchains, featuring automatic state management, full determinism, and idiomatic Go. It works with Tendermint2 and enables smarter, more modular, and transparent appchains with embedded smart-contracts. It can be used in TendermintCore, forks, and non-Cosmos blockchains.
 
 ## Realm (Smart Contracts)
 
