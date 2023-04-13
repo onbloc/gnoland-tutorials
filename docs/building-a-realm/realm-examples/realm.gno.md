@@ -1,6 +1,6 @@
 # realm.gno
 
-The `realm` realm provides a guide on how to import packages in a test environment (`gnodev`) and the production environment (`gnokey addpkg`) along with precautions to note.
+The `realm` realm provides a guide on how to import packages in a test environment (`gno`) and the production environment (`gnokey addpkg`) along with precautions to note.
 
 
 
@@ -32,7 +32,7 @@ Next, we'll import the package above in both the test environment and the produc
 
 ### **Importing in the test environment**
 
-In the test environment, we will copy the file, as `gnodev` imports the package with the physical file path.
+In the test environment, we will copy the file, as `gno` imports the package with the physical file path.
 
 <figure><img src="../../../.gitbook/assets/gor_04_01_pkg_01.png" alt=""><figcaption></figcaption></figure>
 
@@ -117,9 +117,9 @@ func TestGetPrivateVar(t *testing.T) {
 
 ### **Result**
 
-<figure><img src="../../../.gitbook/assets/gor_04_02_gnodev.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/gor_04_02_gno.png" alt=""><figcaption></figcaption></figure>
 
-We can confirm that the test has been successfully passed in the test environment using `gnodev`.&#x20;
+We can confirm that the test has been successfully passed in the test environment using `gno`.&#x20;
 
 
 
@@ -137,7 +137,7 @@ Calling `Render()` and `GetPublicVar()` using the `gnokey maketx call` also work
 
 <figure><img src="../../../.gitbook/assets/gor_04_06_call_get_private.png" alt=""><figcaption></figcaption></figure>
 
-However, unlike the results in `gnodev`, we run into an issue when calling the `getPrivateVar()` function using the `gnokey maketx call` command in the production environment.
+However, unlike the results in `gno`, we run into an issue when calling the `getPrivateVar()` function using the `gnokey maketx call` command in the production environment.
 
 
 
@@ -147,4 +147,4 @@ On the other hand, calling the `getPrivateVar()` function using the `gnokey quer
 
 
 
-> **Note:** As of testnet3, we have run into unexpected results when using access modifiers with `gnodev`, `maketx`, and `query`. We suspect the cause to be one of the following: GnoVM, Gnokey Query, or Gnodev. For now, we can get around this error by changing the lowercase to the uppercase to publicly access the functions. We will update this section once we determine the cause of this phenomenon.
+> **Note:** As of testnet3, we have run into unexpected results when using access modifiers with `gno`, `maketx`, and `query`. We suspect the cause to be one of the following: GnoVM, Gnokey Query, or gno. For now, we can get around this error by changing the lowercase to the uppercase to publicly access the functions. We will update this section once we determine the cause of this phenomenon.

@@ -1,6 +1,6 @@
 # Deploy and Call Realms
 
-Using `gnodev` enables testing within a local development environment. However, it does not facilitate the capability for external parties to participate in testing.
+Using `gno` enables testing within a local development environment. However, it does not facilitate the capability for external parties to participate in testing.
 
 Use the `addpkg` subcommand of `gnokey` to publicly deploy realms.
 

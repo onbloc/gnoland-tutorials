@@ -27,7 +27,7 @@ A realm refers to a specific instance of a smart contract that can be written in
 
 Each realm has the capability to publicly export the function `Render(path string) string`, which performs rendering when passed a valid markdown as a parameter for the specified `path`. This feature allows for increased ease of use and interactivity when working with realms.
 
-During the development and prototyping phase, developers may utilize the `gnodev` CLI tool to streamline the testing and building of realms.
+During the development and prototyping phase, developers may utilize the `gno` CLI tool to streamline the testing and building of realms.
 
 Additionally, realms offer the benefit of being able to utilize packages from standard libraries, such as `random`, `maths`, `avl`, and much more
 

@@ -62,7 +62,7 @@ func Test(t *testing.T) {
 }
 ```
 
-Let's test the code using `gnodev test`.
+Let's test the code using `gno test`.
 
 <figure><img src="../../../.gitbook/assets/gor_01_01_test.png" alt=""><figcaption></figcaption></figure>
 

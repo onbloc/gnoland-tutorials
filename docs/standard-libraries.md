@@ -48,7 +48,7 @@ type Coin struct {
 
 ### `testing`
 
-A library that declares `*testing`, which is a tool used for the creation and execution of test cases during the development and testing phase of realms utilizing the `gnodev` CLI tool with the `test` option.
+A library that declares `*testing`, which is a tool used for the creation and execution of test cases during the development and testing phase of realms utilizing the `gno` CLI tool with the `test` option.
 
 There are 3 types of testing in `gno`.
 

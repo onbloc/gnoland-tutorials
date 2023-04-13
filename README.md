@@ -41,8 +41,8 @@ You can read the docs in [Gitbook](https://onbloc.gitbook.io/gnoland-developer-p
       * [Common Parameters](docs/cli/common-parameters.md)
       * [gnokey](docs/cli/gnokey.md)
       * [gnoland](docs/cli/gnoland.md)
-      * [gnotxport](docs/cli/gnotxport.md)
-      * [gnodev](docs/cli/gnodev.md)
+      * [tm2txsync](docs/cli/tm2txsync.md)
+      * [gno](docs/cli/gno.md)
       * [gnofaucet](docs/cli/gnofaucet.md)
     * [Gnoland RPC Endpoints](docs/gnoland-rpc-endpoints.md)
 * Tutorials
