@@ -1,13 +1,13 @@
-# gnodev
+# gno
 
-`gnodev` is a handy tool for developing and prototyping Gno packages and realms. You may use `gnodev` to use the GnoVM without an actual blockchain to build or test realms in a local environment.
+`gno` is a handy tool for developing and prototyping Gno packages and realms. You may use `gno` to use the GnoVM without an actual blockchain to build or test realms in a local environment.
 
-## Run `gnodev` Commands
+## Run `gno` Commands
 
-The following command will run `gnodev`.
+The following command will run `gno`.
 
 ```bash
-$ gnodev {SUB_COMMAND}
+$ gno {SUB_COMMAND}
 ```
 
 **Subcommands**
@@ -35,7 +35,7 @@ $ gnodev {SUB_COMMAND}
 | Name         | Type          | Description                                                           |
 | ------------ | ------------- | --------------------------------------------------------------------- |
 | `verbose`    | Boolean       | Displays extended information.                                        |
-| `root-dir`   | String        | Clones location of github.com/gnolang/gno (gnodev tries to guess it). |
+| `root-dir`   | String        | Clones location of github.com/gnolang/gno (gno tries to guess it). |
 | `run`        | String        | Test name filtering pattern.                                          |
 | `timeout`    | time.Duration | The maximum execution time in ns.                                     |
 | `precompile` | Boolean       | Precompiles a `.gno` file to a `.go` file before testing.             |
@@ -59,4 +59,4 @@ $ gnodev {SUB_COMMAND}
 | Name       | Type    | Description                                                           |
 | ---------- | ------- | --------------------------------------------------------------------- |
 | `verbose`  | Boolean | Displays extended information.                                        |
-| `root-dir` | String  | Clones location of github.com/gnolang/gno (gnodev tries to guess it). |
+| `root-dir` | String  | Clones location of github.com/gnolang/gno (gno tries to guess it). |

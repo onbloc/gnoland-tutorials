@@ -48,26 +48,26 @@ func Test(t *testing.T) {
 }
 ```
 
-### Testing with `gnodev`
+### Testing with `gno`
 
-Due to the immutable nature of blockchain, it's a good practice to run tests on `gnodev` prior to deploying your realm on the testnet.&#x20;
+Due to the immutable nature of blockchain, it's a good practice to run tests on `gno` prior to deploying your realm on the testnet.&#x20;
 
-Follow the steps in this section to test `contract_test.gno` without interacting with the blockchain using `gnodev`.
+Follow the steps in this section to test `contract_test.gno` without interacting with the blockchain using `gno`.
 
 You must save your `contract.gno` and `contract_test.gno` files in the same directory, and that directory can be any of your choosing. For the examples below we'll assume that the contract is stored in the directory: `~/demo`.
 
-#### Step 1. Build and Run `gnodev`
+#### Step 1. Build and Run `gno`
 
-To build `gnodev`, use the following command:
+To build `gno`, use the following command:
 
 ```bash
-$ make gnodev
+$ make gno
 ```
 
 Then, run it with the following command:
 
 ```
-$ gnodev
+$ gno
 ```
 
 <figure><img src="../.gitbook/assets/09_gnodev_build_run.png" alt=""><figcaption></figcaption></figure>
@@ -77,7 +77,7 @@ $ gnodev
 Test your realm using the following command:
 
 ```bash
-$ gnodev test -verbose=true -root-dir ~/gno ./
+$ gno test -verbose=true -root-dir ~/gno ./
 ```
 
 > Note: `./` above assumes you are operating your terminal out of the same directory as your `contract.gno` and `contract_test.gno` files, if not adjust the path accordingly.

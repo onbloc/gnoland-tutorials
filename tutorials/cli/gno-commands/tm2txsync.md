@@ -1,13 +1,13 @@
-# gnotxport
+# tm2txsync
 
-`gnotxport` is used for backing up a local node's transactions.
+`tm2txsync` is used for backing up a local node's transactions.
 
 ## Import Transaction Data To (or Export It From) a Node
 
 You may import or export transaction data with the following command.
 
 ```bash
-$ gnotxport {SUB_COMMAND}
+$ tm2txsync {SUB_COMMAND}
 ```
 
 #### **Subcommands**
