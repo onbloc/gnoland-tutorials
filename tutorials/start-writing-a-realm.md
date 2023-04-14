@@ -70,7 +70,7 @@ Then, run it with the following command:
 $ gno
 ```
 
-<figure><img src="../.gitbook/assets/09_gno_build_run.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/09_gnodev_build_run.png" alt=""><figcaption></figcaption></figure>
 
 #### Step 2. Test Your Realm
 
@@ -82,11 +82,11 @@ $ gno test -verbose=true -root-dir ~/gno ./
 
 > Note: `./` above assumes you are operating your terminal out of the same directory as your `contract.gno` and `contract_test.gno` files, if not adjust the path accordingly.
 
-<figure><img src="../.gitbook/assets/10_gno_test_fail.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/10_gnodev_test_fail.png" alt=""><figcaption></figcaption></figure>
 
 We can see that the test has failed. Try to find out what went wrong with our test on your own! ([Hint](https://onbloc.gitbook.io/gnoland-developer-portal/tutorials/building-a-realm/testing-realms))
 
-<figure><img src="../.gitbook/assets/11_gno_test_ok.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/11_gnodev_test_ok.png" alt=""><figcaption></figcaption></figure>
 
 Once you fix the errors and re-run the test, you can confirm that the results are now displayed as `PASS`, indicating that your realm is ready to be deployed on the blockchain.
 

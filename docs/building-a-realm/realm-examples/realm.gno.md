@@ -117,7 +117,7 @@ func TestGetPrivateVar(t *testing.T) {
 
 ### **Result**
 
-<figure><img src="../../../.gitbook/assets/gor_04_02_gno.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/gor_04_02_gnodev.png" alt=""><figcaption></figcaption></figure>
 
 We can confirm that the test has been successfully passed in the test environment using `gno`.&#x20;
 
