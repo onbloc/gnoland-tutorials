@@ -449,7 +449,7 @@ Call with the `/abci_query` to get information via the ABCI Query.
 #### Query
 
 | Name                      | Description                                                        |
-| ------------------------- |--------------------------------------------------------------------|
+| ------------------------- | ------------------------------------------------------------------ |
 | `auth/accounts/{ADDRESS}` | Returns the account information.                                   |
 | `bank/balances/{ADDRESS}` | Returns the balance information about the account.                 |
 | `vm/qfuncs`               | Returns public facing function signatures as JSON.                 |

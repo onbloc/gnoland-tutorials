@@ -2,8 +2,6 @@
 
 The `realm` realm provides a guide on how to import packages in a test environment (`gno`) and the production environment (`gnokey addpkg`) along with precautions to note.
 
-
-
 First, let's write a test package:
 
 ```go
@@ -119,32 +117,22 @@ func TestGetPrivateVar(t *testing.T) {
 
 <figure><img src="../../../.gitbook/assets/gor_04_02_gnodev.png" alt=""><figcaption></figcaption></figure>
 
-We can confirm that the test has been successfully passed in the test environment using `gno`.&#x20;
-
-
+We can confirm that the test has been successfully passed in the test environment using `gno`.
 
 <figure><img src="../../../.gitbook/assets/gor_04_03_realm_addpkg.png" alt=""><figcaption></figcaption></figure>
 
 The package gets added successfully in the production environment.
 
-
-
 <figure><img src="../../../.gitbook/assets/gor_04_04_render_call.png" alt=""><figcaption></figcaption></figure>
 
 Calling `Render()` and `GetPublicVar()` using the `gnokey maketx call` also works as expected.
-
-
 
 <figure><img src="../../../.gitbook/assets/gor_04_06_call_get_private.png" alt=""><figcaption></figcaption></figure>
 
 However, unlike the results in `gno`, we run into an issue when calling the `getPrivateVar()` function using the `gnokey maketx call` command in the production environment.
 
-
-
 <figure><img src="../../../.gitbook/assets/gor_04_07_query_get_private.png" alt=""><figcaption></figcaption></figure>
 
 On the other hand, calling the `getPrivateVar()` function using the `gnokey query vm/qeval` command works successfully.
-
-
 
 > **Note:** As of testnet3, we have run into unexpected results when using access modifiers with `gno`, `maketx`, and `query`. We suspect the cause to be one of the following: GnoVM, Gnokey Query, or gno. For now, we can get around this error by changing the lowercase to the uppercase to publicly access the functions. We will update this section once we determine the cause of this phenomenon.

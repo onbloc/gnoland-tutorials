@@ -4,11 +4,11 @@ This tutorial will teach you how to interact with the Gnoland blockchain by crea
 
 ## Prerequisites
 
-- [Initial Setup](../docs/environment-setup/initial-setup.md)
+* [Initial Setup](../docs/environment-setup/initial-setup.md)
 
 ## Create an Account
 
-In order to interact with Gnoland, you need an account that you will use to sign and send transactions. You may create a new account with `gnokey generate` or recover an existing one with `gnokey add`. Confirm that your account was successfully added with `gnokey list` to display all accounts registered in the key base of your device.&#x20;
+In order to interact with Gnoland, you need an account that you will use to sign and send transactions. You may create a new account with `gnokey generate` or recover an existing one with `gnokey add`. Confirm that your account was successfully added with `gnokey list` to display all accounts registered in the key base of your device.
 
 ```bash
 $ gnokey generate # create a new seed phrase (mnemonic)

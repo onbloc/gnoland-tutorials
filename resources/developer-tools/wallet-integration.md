@@ -4,7 +4,7 @@ As a dapp developer, you must integrate a web3 wallet with your application to e
 
 ## Adena Wallet
 
-[Adena](https://adena.app/) is the only wallet that supports the Gnoland blockchain. Below is the basic Adena APIs that you can use for your application. For more detailed information, check out Adena's [developer's docs](https://docs.adena.app/) to integrate Adena to your application.&#x20;
+[Adena](https://adena.app/) is the only wallet that supports the Gnoland blockchain. Below is the basic Adena APIs that you can use for your application. For more detailed information, check out Adena's [developer's docs](https://docs.adena.app/) to integrate Adena to your application.
 
 ### Adena Connect For React App
 
@@ -22,8 +22,6 @@ const existsWallet = () => {
 
 ```
 
-
-
 Register your website as a trusted domain.
 
 ```javascript
@@ -35,8 +33,6 @@ const addEstablish = (siteName) => {
 
 ```
 
-
-
 Retrieve information about the connected account.
 
 ```javascript
@@ -47,8 +43,6 @@ const getAccount = () => {
 };
 
 ```
-
-
 
 Request approval of a transaction that transfers tokens.
 
@@ -73,8 +67,6 @@ const sendToken = (fromAddress, toAddress, sendAmount) => {
 };
 
 ```
-
-
 
 Request approval of a transaction that calls a function from a realm.
 

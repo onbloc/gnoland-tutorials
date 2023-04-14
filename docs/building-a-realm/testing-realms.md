@@ -17,8 +17,6 @@ Writing test cases in Gnolang is similar to that of Golang, with general rules a
   * The `testing` package must be imported.
 * Tests must be run with the `gno test` command.
 
-
-
 Let's write a sample code and test it.
 
 ```go

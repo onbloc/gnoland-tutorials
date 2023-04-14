@@ -100,8 +100,6 @@ Functions that make changes to the state must have a subject for change, hence m
 
 This method involves seemingly fewer options compared to `gnokey maketx call` method. However, passing the argument can be quite confusing: the realm path that exposes the `Render()` function must be placed in the `--data` option, and the arguments in a new line (`\n`).
 
-
-
 If we return to our realm code, we can see that the other function, `Hello()`, also doesn't cause any state changes to the blockchain.
 
 Any other function besides `Render()` can be invoked with `gnokey query vm/qeval`.

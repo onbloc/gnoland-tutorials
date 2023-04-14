@@ -1,6 +1,6 @@
 # Standard Libraries
 
-When developing a realm in Gnolang, developers may utilize libraries in [stdlibs](https://github.com/gnolang/gno/tree/master/stdlibs). These are the core standard packages provided for Gnolang [Realms ](building-a-realm/overview.md)& [Packages](packages.md).&#x20;
+When developing a realm in Gnolang, developers may utilize libraries in [stdlibs](https://github.com/gnolang/gno/tree/master/stdlibs). These are the core standard packages provided for Gnolang [Realms ](building-a-realm/overview.md)& [Packages](packages.md).
 
 Libraries can be imported in a manner similar to how libraries are imported in Golang.
 

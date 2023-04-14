@@ -1,4 +1,4 @@
-# gno (ex gnodev)
+# gno
 
 `gno` is a handy tool for developing and prototyping Gno packages and realms. You may use `gno` to use the GnoVM without an actual blockchain to build or test realms in a local environment.
 
@@ -32,13 +32,13 @@ $ gno {SUB_COMMAND}
 
 #### **Options**
 
-| Name         | Type          | Description                                                           |
-| ------------ | ------------- | --------------------------------------------------------------------- |
-| `verbose`    | Boolean       | Displays extended information.                                        |
+| Name         | Type          | Description                                                        |
+| ------------ | ------------- | ------------------------------------------------------------------ |
+| `verbose`    | Boolean       | Displays extended information.                                     |
 | `root-dir`   | String        | Clones location of github.com/gnolang/gno (gno tries to guess it). |
-| `run`        | String        | Test name filtering pattern.                                          |
-| `timeout`    | time.Duration | The maximum execution time in ns.                                     |
-| `precompile` | Boolean       | Precompiles a `.gno` file to a `.go` file before testing.             |
+| `run`        | String        | Test name filtering pattern.                                       |
+| `timeout`    | time.Duration | The maximum execution time in ns.                                  |
+| `precompile` | Boolean       | Precompiles a `.gno` file to a `.go` file before testing.          |
 
 ### `precompile`
 
@@ -56,7 +56,7 @@ $ gno {SUB_COMMAND}
 
 #### **Options**
 
-| Name       | Type    | Description                                                           |
-| ---------- | ------- | --------------------------------------------------------------------- |
-| `verbose`  | Boolean | Displays extended information.                                        |
+| Name       | Type    | Description                                                        |
+| ---------- | ------- | ------------------------------------------------------------------ |
+| `verbose`  | Boolean | Displays extended information.                                     |
 | `root-dir` | String  | Clones location of github.com/gnolang/gno (gno tries to guess it). |

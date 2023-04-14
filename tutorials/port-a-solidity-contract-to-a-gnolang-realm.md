@@ -1,6 +1,6 @@
-# Solidity Contract to Gnolang Realm
+# Port a Solidity Contract to a Gnolang Realm
 
-In this part, we are going to port a Solidity contract  `Simple Auction` to a Gnolang Realm  `auction.gno` with test cases (Test Driven Development (TDD) approach).
+In this part, we are going to port a Solidity contract `Simple Auction` to a Gnolang Realm `auction.gno` with test cases (Test Driven Development (TDD) approach).
 
 You can check the Solidity contract in this [link](https://docs.soliditylang.org/en/latest/solidity-by-example.html#simple-open-auction), and here's the code for porting.
 
@@ -213,8 +213,6 @@ func shouldNoPanic(t *testing.T, f func()) {
 }
 ```
 
-
-
 ## Variable init - Solidity
 
 ```solidity
@@ -267,7 +265,7 @@ constructor(
 }
 ```
 
-* `address payable public beneficiary;` : Address to receive the amount after the auction's ending.  &#x20;
+* `address payable public beneficiary;` : Address to receive the amount after the auction's ending.
 * `uint public auctionEndTime;` : Auction ending time.
 * `address public highestBidder;` : The highest bidder.
 * `uint public highestBid;` : The highest bid.
@@ -328,7 +326,7 @@ function bid() external payable {
 }
 ```
 
-&#x20;`bid()` function is for participating in an auction and includes:
+`bid()` function is for participating in an auction and includes:
 
 * Determining whether an auction is closed.
 * Comparing a new bid with the current highest bid.
@@ -493,8 +491,6 @@ func TestWithdraw(t *testing.T) {
 
 ```
 
-
-
 ## auctionEnd() - Solidity
 
 ```solidity
@@ -581,8 +577,6 @@ func TestAuctionEnd(t *testing.T) {
 }
 ```
 
-
-
 ## Precautions for Running Test Cases
 
 * Each test function should be executed separately one by one, to return all passes without any errors.
@@ -665,4 +659,3 @@ func TestFull(t *testing.T) {
 	}
 }
 ```
-

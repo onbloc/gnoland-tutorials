@@ -10,7 +10,7 @@ Generate a new seed phrase and add it to your keybase with the following command
 $ gnokey generate
 ```
 
-<figure><img src="../../../.gitbook/assets/2-7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2-7.png" alt=""><figcaption></figcaption></figure>
 
 ## Add a New Key
 
@@ -20,7 +20,7 @@ You can add a new private key to the keybase using the following command.
 $ gnokey add {KEY_NAME}
 ```
 
-#### &#x20;**Options**
+#### **Options**
 
 | Name        | Type       | Description                                                                            |
 | ----------- | ---------- | -------------------------------------------------------------------------------------- |
@@ -37,7 +37,7 @@ $ gnokey add {KEY_NAME}
 
 #### **Example Result**
 
-<figure><img src="../../../.gitbook/assets/2-8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2-8.png" alt=""><figcaption></figcaption></figure>
 
 > **Test Seed Phrase:** source bonus chronic canvas draft south burst lottery vacant surface solve popular case indicate oppose farm nothing bullet exhibit title speed wink action roast
 
@@ -51,7 +51,7 @@ $ gnokey list
 
 #### **Example Result**
 
-<figure><img src="../../../.gitbook/assets/2-9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2-9.png" alt=""><figcaption></figcaption></figure>
 
 ## Delete a Key
 
@@ -70,7 +70,7 @@ $ gnokey delete {KEY_NAME}
 
 #### **Example Result**
 
-<figure><img src="../../../.gitbook/assets/2-10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2-10.png" alt=""><figcaption></figcaption></figure>
 
 ## Export a Private Key (Encrypted & Unencrypted)
 
@@ -82,19 +82,19 @@ $ gnokey export
 
 #### **Options**
 
-| Name          | Type   | Description                                          |
-| ------------- | ------ | ---------------------------------------------------- |
-| `key`         | String | Name or Bech32 address of the private key            |
-| `output-path` | String | The desired output path for the armor file           |
-| `unsafe`      | Bool   | Export the private key armor as unencrypted          |
+| Name          | Type   | Description                                 |
+| ------------- | ------ | ------------------------------------------- |
+| `key`         | String | Name or Bech32 address of the private key   |
+| `output-path` | String | The desired output path for the armor file  |
+| `unsafe`      | Bool   | Export the private key armor as unencrypted |
 
 #### **Example Result - Encrypted**
 
-<figure><img src="../../../.gitbook/assets/2-11-enc-fix.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2-11-enc-fix.png" alt=""><figcaption></figcaption></figure>
 
 #### **Example Result - Unencrypted**
 
-<figure><img src="../../../.gitbook/assets/2-11-dec-fix.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2-11-dec-fix.png" alt=""><figcaption></figcaption></figure>
 
 ## Import a Private Key (Encrypted & Unencrypted)
 
@@ -114,11 +114,11 @@ $ gnokey import
 
 #### **Example Result - Encrypted**
 
-<figure><img src="../../../.gitbook/assets/2-12-enc-fix.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2-12-enc-fix.png" alt=""><figcaption></figcaption></figure>
 
 #### **Example Result - Unencrypted**
 
-<figure><img src="../../../.gitbook/assets/2-12-dec-fix.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2-12-dec-fix.png" alt=""><figcaption></figcaption></figure>
 
 ## Make an ABCI Query
 
@@ -151,7 +151,7 @@ $ gnokey query {QUERY_PATH}
 
 #### **Example Result**
 
-<figure><img src="../../../.gitbook/assets/2-13.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2-13.png" alt=""><figcaption></figcaption></figure>
 
 ## Sign and Broadcast a Transaction
 
@@ -204,7 +204,7 @@ $ gnokey maketx addpkg \
 
 #### Example Result
 
-<figure><img src="../../../.gitbook/assets/2-14.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2-14.png" alt=""><figcaption></figcaption></figure>
 
 ### `call`
 
@@ -246,7 +246,7 @@ gnokey maketx call \
 
 #### **Example Results**
 
-<figure><img src="../../../.gitbook/assets/2-15.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2-15.png" alt=""><figcaption></figcaption></figure>
 
 ### `send`
 
@@ -281,7 +281,7 @@ gnokey maketx send \
 
 #### **Example Results**
 
-<figure><img src="../../../.gitbook/assets/2-16.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2-16.png" alt=""><figcaption></figcaption></figure>
 
 ## Sign a Document
 
@@ -303,7 +303,7 @@ $ gnokey sign
 
 #### **Example Result**
 
-<figure><img src="../../../.gitbook/assets/2-17.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2-17.png" alt=""><figcaption></figcaption></figure>
 
 ## Verify a Document Signature
 
@@ -329,4 +329,4 @@ $ gnokey broadcast {signed transaction file document}
 
 #### **Example Result**
 
-<figure><img src="../../../.gitbook/assets/2-18.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2-18.png" alt=""><figcaption></figcaption></figure>

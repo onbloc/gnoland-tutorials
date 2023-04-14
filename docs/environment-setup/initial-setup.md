@@ -30,7 +30,7 @@ $ git clone git@github.com:gnolang/gno.git
 
 <figure><img src="../../.gitbook/assets/2-3.png" alt=""><figcaption></figcaption></figure>
 
-### Step 4. Build `gnokey`&#x20;
+### Step 4. Build `gnokey`
 
 ```bash
 $ cd ~/gno && make gnokey
