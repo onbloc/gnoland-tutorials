@@ -4,7 +4,7 @@
 
 ## Run `gnofaucet` Commands
 
-Enable the faucet using the following command.&#x20;
+Enable the faucet using the following command.
 
 ```bash
 $ gnofaucet serve
@@ -13,7 +13,7 @@ $ gnofaucet serve
 #### **Options**
 
 | Name                      | Type    | Description                                                                          |
-| ------------------------- | ------- |--------------------------------------------------------------------------------------|
+| ------------------------- | ------- | ------------------------------------------------------------------------------------ |
 | `chain-id`                | String  | The id of the chain (required).                                                      |
 | `gas-wanted`              | Int64   | The maximum amount of gas to use for the transaction (default: `50000`)              |
 | `gas-fee`                 | String  | The gas fee to pay for the transaction.                                              |

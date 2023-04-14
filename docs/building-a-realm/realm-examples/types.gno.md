@@ -119,8 +119,6 @@ func Test(t *testing.T) {
 
 The AVL Tree is a commonly used package, hence results in a long test case. Let us breakdown the code by segments.
 
-
-
 ```go
 	{
 		got := gTree.Size()
@@ -132,8 +130,6 @@ The AVL Tree is a commonly used package, hence results in a long test case. Let 
 ```
 
 `Size() int` returns the size of the AVL Tree (number of nodes).
-
-
 
 ```go
 	{
@@ -155,8 +151,6 @@ The AVL Tree is a commonly used package, hence results in a long test case. Let 
 
 `Has(key string) (has bool)` returns the existence of the node for the given key.
 
-
-
 ```go
 	{
 		_, got := gTree.Get("a") 
@@ -168,8 +162,6 @@ The AVL Tree is a commonly used package, hence results in a long test case. Let 
 ```
 
 `Get(key string) index int, value interface{}, exists bool`) returns the index, value, and the existence of the node for the given key.
-
-
 
 ```go
 	{
@@ -183,8 +175,6 @@ The AVL Tree is a commonly used package, hence results in a long test case. Let 
 
 `GetByIndex(index int) (key string, value interface{})` returns the key and the value of the node for the given index.
 
-
-
 ```go
 	{
 		gTree.Remove("A")
@@ -197,8 +187,6 @@ The AVL Tree is a commonly used package, hence results in a long test case. Let 
 ```
 
 `Remove(key string)` removes the node for the given key (without returning any value).
-
-
 
 ```go
 	{
@@ -219,6 +207,6 @@ The AVL Tree is a commonly used package, hence results in a long test case. Let 
 
 The `printIn` function shows all nodes of the tree based on the index.
 
-From what is seen above, nodes are ordered as the following: special characters -> numbers -> uppercase letters -> lowercase letters ->  special characters.
+From what is seen above, nodes are ordered as the following: special characters -> numbers -> uppercase letters -> lowercase letters -> special characters.
 
 The order is in the ascending code value (DEC) as specified in the [ASCII](https://www.asciitable.com/asciifull.gif).

@@ -54,8 +54,6 @@ func ImpossibleInc() {
 
 Let's break down the code by each segment.
 
-
-
 ```go
 var myVar = 1
 
@@ -75,8 +73,6 @@ func GetInitValue() int {
 The code block above displays the variable & constant declaration code (and 2 functions). The `init()` function is a pre-defined function that serves a similar purpose as that of the Golang (executed with priority upon initializing or importing a package).
 
 As a result, once the code above is executed, the `initlVar` variable with only a declared data type, but without an initial value, is assigned with a value of `1000`.
-
-
 
 ```go
 func get() int {
@@ -115,8 +111,6 @@ The `Inc()` function and the `IncByInput()` function are designed to increment t
 The `Dec()` function decrements the value of `myVar`. However, as it does not possess a return value, an additional function must be used to verify the result.
 
 The `ImpossibleInc()` function at the end results in an error as it attempts to modify the value of the constant.
-
-
 
 ### Test Code
 

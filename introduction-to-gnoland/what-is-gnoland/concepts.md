@@ -23,7 +23,7 @@ In the near future, Gnolang will incorporate concepts related to multithreading 
 
 ## Realm
 
-A realm refers to a specific instance of a smart contract that can be written in the Gnolang programming language.&#x20;
+A realm refers to a specific instance of a smart contract that can be written in the Gnolang programming language.
 
 Each realm has the capability to publicly export the function `Render(path string) string`, which performs rendering when passed a valid markdown as a parameter for the specified `path`. This feature allows for increased ease of use and interactivity when working with realms.
 

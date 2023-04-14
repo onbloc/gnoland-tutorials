@@ -4,14 +4,14 @@ A realm refers to a specific instance of a smart contract that can be written in
 
 Before we dive in, let's first study the differences between realms and packages.
 
-#### ****[**Realms**](https://github.com/gnolang/gno/tree/master/examples/gno.land/r)****
+#### [**Realms**](https://github.com/gnolang/gno/tree/master/examples/gno.land/r)
 
 * Smart contracts in Gnolang.
 * Realms are stateful.
 * The default import path is `gno.land/r/~~~`.
 * Each realm has the capability to publicly export the function `Render(path string) string`, which performs rendering when passed a valid markdown as a parameter for the specified `path`.
 
-#### ****[**Packages**](https://github.com/gnolang/gno/tree/master/examples/gno.land/p/demo)****
+#### [**Packages**](https://github.com/gnolang/gno/tree/master/examples/gno.land/p/demo)
 
 * A unit that contains functionalities and utilities that can be used in realms.
 * Packages are stateless.

@@ -1,6 +1,6 @@
 # Build a Demo Dapp
 
-This sample is to guide you on how an app interacts with Adena, a wallet built using the Gnoland RPC endpoints. You can play around with a sample dapp [here](https://onbloc.github.io/dapp-example/), you can also find the source [here](https://github.com/onbloc/dapp-example).&#x20;
+This sample is to guide you on how an app interacts with Adena, a wallet built using the Gnoland RPC endpoints. You can play around with a sample dapp [here](https://onbloc.github.io/dapp-example/), you can also find the source [here](https://github.com/onbloc/dapp-example).
 
 ### Dapp Example - Demo Project
 

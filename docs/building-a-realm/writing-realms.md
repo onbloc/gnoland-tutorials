@@ -62,8 +62,8 @@ The sample code above imports the `avl` package and the `dom` package.
 In Gnolang, the distinction of access modifiers is based on the naming conventions of objects.
 
 * Starting with an uppercase
-	* Can be externally which means `Public`
-	* Similar to `public` and `external` in Solidity
+  * Can be externally which means `Public`
+  * Similar to `public` and `external` in Solidity
 * Starting with a lowercase
-	* Cannot be externally accessed which means `Private`
-	* Similar to `private` and `internal` in Solidity
+  * Cannot be externally accessed which means `Private`
+  * Similar to `private` and `internal` in Solidity

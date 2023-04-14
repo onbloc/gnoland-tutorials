@@ -4,4 +4,3 @@ In this section, we explore the basics of Gnoland such as its background, value 
 
 * [Overview](overview.md)
 * [Concepts](concepts.md)
-

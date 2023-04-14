@@ -4,8 +4,8 @@ This tutorial will provide you with a step-by-step guide on how to set up a loca
 
 ## Prerequisites
 
-- [Initial Setup](../docs/environment-setup/initial-setup.md)
-- [Build the Local Testnet](../docs/environment-setup/build-the-local-testnet.md)
+* [Initial Setup](../docs/environment-setup/initial-setup.md)
+* [Build the Local Testnet](../docs/environment-setup/build-the-local-testnet.md)
 
 ## Locally Building a Realm
 
@@ -50,7 +50,7 @@ func Test(t *testing.T) {
 
 ### Testing with `gno`
 
-Due to the immutable nature of blockchain, it's a good practice to run tests on `gno` prior to deploying your realm on the testnet.&#x20;
+Due to the immutable nature of blockchain, it's a good practice to run tests on `gno` prior to deploying your realm on the testnet.
 
 Follow the steps in this section to test `contract_test.gno` without interacting with the blockchain using `gno`.
 
@@ -184,9 +184,7 @@ $ gnokey query -remote="test3.gno.land:36657" bank/balances/{your_address}
 
 #### Step 2. Receive Testnet GNOTs from the Faucet
 
-
 As of now, the official GNOT faucet is under maintenance. Please visit [the official Gnoland Server on Discord](https://discord.gg/3YbdqVP8Tb) and request for testnet tokens from the community members.
-
 
 #### Step 3. Check Your New Balance
 
@@ -202,10 +200,10 @@ We can see that you now have 310 Testnet GNOTS in your wallet.
 
 #### Step 4. Deploy Your Realm on the Testnet
 
-We're going to be using the same commands that we used to deploy our realm in a local environment. However, we need to configure two options to set our target network to the Testnet.&#x20;
+We're going to be using the same commands that we used to deploy our realm in a local environment. However, we need to configure two options to set our target network to the Testnet.
 
-- `remote` => `"test3.gno.land:36657"`
-- `chainid` => `"test3"`
+* `remote` => `"test3.gno.land:36657"`
+* `chainid` => `"test3"`
 
 <figure><img src="../.gitbook/assets/21_test3_deploy.png" alt=""><figcaption></figcaption></figure>
 
@@ -213,4 +211,4 @@ We're going to be using the same commands that we used to deploy our realm in a 
 
 Confirm that your realm has been published by checking your transaction history on Testnet 3 on [Gnoscan](https://gnoscan.io/).
 
-<figure><img src="../.gitbook/assets/23_gnoscan.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/onbloc/gnoland-tutorials/blob/main/.gitbook/assets/23_gnoscan.png" alt=""><figcaption></figcaption></figure>

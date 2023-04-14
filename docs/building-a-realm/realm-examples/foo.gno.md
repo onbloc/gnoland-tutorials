@@ -30,8 +30,6 @@ We first import packages and realms that we'll be using in the `foo` realm. Then
 
 > **Note:** The `admin` address will be the only address that can can mint or burn tokens.
 
-
-
 ```go
 func assertIsAdmin() error {
 	caller := std.GetOrigCaller()
@@ -43,8 +41,6 @@ func assertIsAdmin() error {
 ```
 
 The `assertIsAdmin()` function implements a logic to check if the caller of the admin-only function is the `admin` address. This concept is similar to the `require` or `modifer` in Solidity.
-
-
 
 ```go
 func init() {
@@ -60,8 +56,6 @@ The `init()` function resets the package and creates the `foo` token with the fo
 * Decimals: `4`
 
 Then, the function mints 100 `foo` tokens to the `admin` address.
-
-
 
 ```go
 func Mint(address users.AddressOrName, amount uint64) error {
@@ -82,8 +76,6 @@ func Burn(address users.AddressOrName, amount uint64) error {
 ```
 
 The `Mint` function and the `Burn` function respectively handles minting and burning of tokens. Both functions verify that the caller is the admin using the `assertIsAdmin()` function declared above.
-
-
 
 ```go
 func TotalSupply() uint64 {
@@ -156,11 +148,11 @@ Other functions implement the specifications of ERC20 with 2 additional function
 
 `FaucetWithoutAdmin`: Mints 200 `foo` tokens to an address (public).
 
-`Allowance`: Returns the amount `owner`'s tokens that the `spender` can transfer on behalf of the `owner`.&#x20;
+`Allowance`: Returns the amount `owner`'s tokens that the `spender` can transfer on behalf of the `owner`.
 
 `Approve`: Grants the `spender` with the authority to send a defined amount of `caller`'s `foo` tokens on behalf of the `caller`.
 
-TransferFrom: The `spender` sends `owner`'s tokens on behalf of the `owner`.&#x20;
+TransferFrom: The `spender` sends `owner`'s tokens on behalf of the `owner`.
 
 ####
 
@@ -295,9 +287,7 @@ func assertGRC20Balance(t *testing.T, addr users.AddressOrName, expectedBal uint
 }
 ```
 
-> **Tip:** the `users` realm enables users to register addresses with usernames([example](https://onbloc.gitbook.io/gnoland-developer-portal/tutorials/interact-with-gnoland#register-as-a-user)) on  `/r/demo/users` for simplicity and convenience.&#x20;
-
-
+> **Tip:** the `users` realm enables users to register addresses with usernames([example](https://onbloc.gitbook.io/gnoland-developer-portal/tutorials/interact-with-gnoland#register-as-a-user)) on `/r/demo/users` for simplicity and convenience.
 
 Let's assume that 3 addresses have been registered as users as the following:
 
