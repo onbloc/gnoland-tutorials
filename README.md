@@ -36,6 +36,7 @@ You can read the docs in [Gitbook](https://onbloc.gitbook.io/gnoland-developer-p
     * [Environment Setup](docs/environment-setup/)
       * [Initial Setup](docs/environment-setup/initial-setup.md)
       * [Build the Local Testnet](docs/environment-setup/build-the-local-testnet.md)
+      * [Read the Genesis again](docs/environment-setup/restart-on-block-1-to-read-the-genesis-again.md)
     * [CLI](docs/cli/)
       * [Common Parameters](docs/cli/common-parameters.md)
       * [gnokey](docs/cli/gnokey.md)
