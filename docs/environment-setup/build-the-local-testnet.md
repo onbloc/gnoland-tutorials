@@ -1,25 +1,10 @@
 # Build the Local Testnet
 
-### Step 1. Build the Gno Project
+## Prerequisites
 
-Change your working directory to `gno/gno.land`.
+- [Initial Setup](../environment-setup/initial-setup.md)
 
-```bash
-$ cd ~/gno/gno.land/
-```
-
-Use the `make` command to build the gnoland binary.
-
-```bash
-$ make install.gnoland
-```
-
-<figure><img src="../../.gitbook/assets/2-5.png" alt=""><figcaption></figcaption></figure>
-
-> **Note:** If you're developing on a Windows device, install the GNU make using this [link](https://gnuwin32.sourceforge.net/packages/make.htm).
-
-
-### Step 2. Run a Local Node
+### Step 1. Run a Local Node
 
 Start a local Gnoland blockchain node with the following command:
 
@@ -37,13 +22,11 @@ After a few moments, you will start to see blocks being produced on your network
 
 This section will teach you how to launch your own gno.land web page that will serve as a docs page for your network. Although this section is optional, we highly recommend completing it.
 
-First, build the web page with the following command:
+#### Prerequisites
 
-```
-$ make install.gnoweb
-```
+- [Initial Setup - Build gnoweb](../environment-setup/initial-setup.md#build-gnoweb)
 
-Then, run the web page with the following command:
+Run the web page with the following command:
 
 ```
 $ gnoweb
