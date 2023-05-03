@@ -4,8 +4,8 @@ This tutorial will provide you with a step-by-step guide on how to set up a loca
 
 ## Prerequisites
 
-* [Initial Setup](../docs/environment-setup/initial-setup.md)
-* [Build the Local Testnet](../docs/environment-setup/build-the-local-testnet.md)
+- [Initial Setup](../docs/environment-setup/initial-setup.md)
+- [Build the Local Testnet](../docs/environment-setup/build-the-local-testnet.md)
 
 ## Locally Building a Realm
 
@@ -56,37 +56,21 @@ Follow the steps in this section to test `contract_test.gno` without interacting
 
 You must save your `contract.gno` and `contract_test.gno` files in the same directory, and that directory can be any of your choosing. For the examples below we'll assume that the contract is stored in the directory: `~/demo`.
 
-#### Step 1. Build and Run `gno`
-
-To build `gno`, use the following command:
-
-```bash
-$ make gno
-```
-
-Then, run it with the following command:
-
-```
-$ gno
-```
-
-<figure><img src="../.gitbook/assets/09_gnodev_build_run.png" alt=""><figcaption></figcaption></figure>
-
-#### Step 2. Test Your Realm
+#### Step 1. Test Your Realm
 
 Test your realm using the following command:
 
 ```bash
-$ gno test -verbose=true -root-dir ~/gno ./
+gno test -verbose=true -root-dir ~/gno ./
 ```
 
 > Note: `./` above assumes you are operating your terminal out of the same directory as your `contract.gno` and `contract_test.gno` files, if not adjust the path accordingly.
 
-<figure><img src="../.gitbook/assets/10_gnodev_test_fail.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/img04.png" alt=""><figcaption></figcaption></figure>
 
 We can see that the test has failed. Try to find out what went wrong with our test on your own! ([Hint](https://onbloc.gitbook.io/gnoland-developer-portal/tutorials/building-a-realm/testing-realms))
 
-<figure><img src="../.gitbook/assets/11_gnodev_test_ok.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/gor_01_01_test.png" alt=""><figcaption></figcaption></figure>
 
 Once you fix the errors and re-run the test, you can confirm that the results are now displayed as `PASS`, indicating that your realm is ready to be deployed on the blockchain.
 
@@ -96,18 +80,12 @@ In order to deploy your realm, you must first create an account using `gnokey`. 
 
 > source bonus chronic canvas draft south burst lottery vacant surface solve popular case indicate oppose farm nothing bullet exhibit title speed wink action roast
 
-#### Step 1. Build `gnokey` and Check the Account
+#### Step 1. Import & Check the Account
 
-Build gnokey with the following command:
-
-```bash
-$ make gnokey
-```
-
-Then, import the account with the following command (remember to use the seed phrase we shared above):
+Import the account with the following command (remember to use the seed phrase we shared above):
 
 ```bash
-$ gnokey add -recover {account_name}
+gnokey add -recover {account_name}
 ```
 
 <figure><img src="../.gitbook/assets/12_gnokey_build_recover.png" alt=""><figcaption></figcaption></figure>
@@ -115,7 +93,7 @@ $ gnokey add -recover {account_name}
 Once you import the account, check its balance using the following command:
 
 ```bash
-$ gnokey query "auth/accounts/{account_address}"
+gnokey query "auth/accounts/{account_address}"
 ```
 
 <figure><img src="../.gitbook/assets/13_gnokey_query_accounts.png" alt=""><figcaption></figcaption></figure>
@@ -170,14 +148,14 @@ You may use your existing account on the Testnet, but you will need to fund it w
 Create a new account with the following command:
 
 ```bash
-$ gnokey add {account_name} # creates an address with a new seed phrase
-$ gnokey add -recover -index {index} {account_name}  # creates an address using the existing seed phrase
+gnokey add {account_name} # creates an address with a new seed phrase
+gnokey add -recover -index {index} {account_name}  # creates an address using the existing seed phrase
 ```
 
 Then, check its balances on the testnet with the following command:
 
 ```bash
-$ gnokey query -remote="test3.gno.land:36657" bank/balances/{your_address}
+gnokey query -remote="test3.gno.land:36657" bank/balances/{your_address}
 ```
 
 <figure><img src="../.gitbook/assets/18_gnokey_new_addr_test3_balance.png" alt=""><figcaption></figcaption></figure>
@@ -191,7 +169,7 @@ As of now, the official GNOT faucet is under maintenance. Please visit [the offi
 Confirm that your wallet has received Testnet GNOTs with the following command:
 
 ```bash
-$ gnokey query -remote="test3.gno.land:36657" bank/balances/{your_address}
+gnokey query -remote="test3.gno.land:36657" bank/balances/{your_address}
 ```
 
 <figure><img src="../.gitbook/assets/20_310_balance.png" alt=""><figcaption></figcaption></figure>
@@ -202,8 +180,8 @@ We can see that you now have 310 Testnet GNOTS in your wallet.
 
 We're going to be using the same commands that we used to deploy our realm in a local environment. However, we need to configure two options to set our target network to the Testnet.
 
-* `remote` => `"test3.gno.land:36657"`
-* `chainid` => `"test3"`
+- `remote` => `"test3.gno.land:36657"`
+- `chainid` => `"test3"`
 
 <figure><img src="../.gitbook/assets/21_test3_deploy.png" alt=""><figcaption></figcaption></figure>
 

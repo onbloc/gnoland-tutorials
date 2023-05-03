@@ -15,18 +15,18 @@ Make sure you:
 1. Download the [Adena Extension](https://chrome.google.com/webstore/detail/adena/oefglhbffgfkcpboeackfgdagmlnihnh).
 2. Install Node Packages.
 
-```
-$ npm install
+```bash
+npm install
 ```
 
 3. Start the project
 
-```
-$ npm start
+```bash
+npm start
 ```
 
 4. Build the project
 
-```
-$ npm build
+```bash
+npm build
 ```

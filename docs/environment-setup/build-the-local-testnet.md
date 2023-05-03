@@ -9,7 +9,7 @@
 Start a local Gnoland blockchain node with the following command:
 
 ```bash
-$ gnoland
+gnoland
 ```
 
 <figure><img src="../../.gitbook/assets/05_run_gnoland.png" alt=""><figcaption></figcaption></figure>
@@ -29,7 +29,7 @@ This section will teach you how to launch your own gno.land web page that will s
 Run the web page with the following command:
 
 ```
-$ gnoweb
+gnoweb
 ```
 
 <figure><img src="../../.gitbook/assets/07_build_run_gnoweb.png" alt=""><figcaption></figcaption></figure>

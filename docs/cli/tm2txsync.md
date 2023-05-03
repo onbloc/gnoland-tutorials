@@ -7,7 +7,7 @@
 You may import or export transaction data with the following command.
 
 ```bash
-$ tm2txsync {SUB_COMMAND}
+tm2txsync {SUB_COMMAND}
 ```
 
 #### **Subcommands**

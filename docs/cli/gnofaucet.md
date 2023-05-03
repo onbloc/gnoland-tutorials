@@ -7,7 +7,7 @@
 Enable the faucet using the following command.
 
 ```bash
-$ gnofaucet serve
+gnofaucet serve
 ```
 
 #### **Options**
@@ -18,7 +18,7 @@ $ gnofaucet serve
 | `gas-wanted`              | Int64   | The maximum amount of gas to use for the transaction (default: `50000`)              |
 | `gas-fee`                 | String  | The gas fee to pay for the transaction.                                              |
 | `memo`                    | String  | Any descriptive text (default: `""`)                                                 |
-| `test-to`                 | String  | Test address (optional) 부연설명 필요                                                      |
+| `test-to`                 | String  | Test address (optional) 부연설명 필요                                                |
 | `send`                    | String  | Coins to send (default: `"1000000ugnot"`).                                           |
 | `captcha-secret`          | String  | The secret key for the recaptcha. If empty, the captcha is disabled (default: `""`). |
 | `is-behind-proxy`         | Boolean | Uses X-Forwarded-For IP for throttling (default: `false`).                           |
@@ -29,7 +29,7 @@ $ gnofaucet serve
 ### **Step 1. Create an account named `test1` with the test seed phrase below.**
 
 ```bash
-$ gnokey add test1 --recover
+gnokey add test1 --recover
 ```
 
 > **Test Seed Phrase:** source bonus chronic canvas draft south burst lottery vacant surface solve popular case indicate oppose farm nothing bullet exhibit title speed wink action roast
@@ -37,13 +37,13 @@ $ gnokey add test1 --recover
 ### **Step 2. Run `gnofaucet`**
 
 ```bash
-$ gnofaucet serve test1 --chain-id dev --send 500000000ugnot
+gnofaucet serve test1 --chain-id dev --send 500000000ugnot
 ```
 
 ### **Step 3. Receive GNOTs from the faucet**
 
 ```bash
-$ curl --location --request POST 'http://localhost:5050' \
+curl --location --request POST 'http://localhost:5050' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'toaddr={address to receive}'
 ```
