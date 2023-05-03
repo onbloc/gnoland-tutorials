@@ -1,4 +1,4 @@
-# Build the Local Testnet
+# Deploy the Local Testnet
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ This section will teach you how to launch your own gno.land web page that will s
 
 #### Prerequisites
 
-- [Initial Setup - Build gnoweb](../environment-setup/initial-setup.md#build-gnoweb)
+- [Initial Setup - Build gnoland](../environment-setup/initial-setup.md#step-4.1-build-gnoland)
 
 Run the web page with the following command:
 

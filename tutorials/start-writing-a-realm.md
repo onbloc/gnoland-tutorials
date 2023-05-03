@@ -5,7 +5,7 @@ This tutorial will provide you with a step-by-step guide on how to set up a loca
 ## Prerequisites
 
 - [Initial Setup](../docs/environment-setup/initial-setup.md)
-- [Build the Local Testnet](../docs/environment-setup/build-the-local-testnet.md)
+- [Deploy the Local Testnet](../docs/environment-setup/build-the-local-testnet.md)
 
 ## Locally Building a Realm
 
