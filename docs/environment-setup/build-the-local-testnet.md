@@ -19,7 +19,6 @@ gnoland
 After a few moments, you will start to see blocks being produced on your network.
 
 ### Step 3. Build a Web Page (Optional)
-### Step 3. Build a Web Page (Optional)
 
 This section will teach you how to launch your own gno.land web page that will serve as a docs page for your network. Although this section is optional, we highly recommend completing it.
 
