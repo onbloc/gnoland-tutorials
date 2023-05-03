@@ -1,7 +1,5 @@
 # Initial Setup
 
-## Basic Setup
-
 ### Step 1. Install Git
 
 To install Git, click on [this link](https://git-scm.com/downloads) to download the installer, or run the following script on your CLI:
