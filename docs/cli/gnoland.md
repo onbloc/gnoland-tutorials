@@ -5,7 +5,7 @@
 Start a node on the Gnoland blockchain with the following command.
 
 ```bash
-$ gnoland
+gnoland
 ```
 
 ### **Options**

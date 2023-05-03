@@ -7,7 +7,7 @@ Used for account & key management and general interactions with the Gnoland bloc
 Generate a new seed phrase and add it to your keybase with the following command.
 
 ```bash
-$ gnokey generate
+gnokey generate
 ```
 
 <figure><img src="../../.gitbook/assets/2-7.png" alt=""><figcaption></figcaption></figure>
@@ -17,7 +17,7 @@ $ gnokey generate
 You can add a new private key to the keybase using the following command.
 
 ```bash
-$ gnokey add {KEY_NAME}
+gnokey add {KEY_NAME}
 ```
 
 #### **Options**
@@ -46,7 +46,7 @@ $ gnokey add {KEY_NAME}
 List all keys stored in your keybase with the following command.
 
 ```bash
-$ gnokey list
+gnokey list
 ```
 
 #### **Example Result**
@@ -58,7 +58,7 @@ $ gnokey list
 Delete a key from your keybase with the following command.
 
 ```bash
-$ gnokey delete {KEY_NAME}
+gnokey delete {KEY_NAME}
 ```
 
 #### **Options**
@@ -77,7 +77,7 @@ $ gnokey delete {KEY_NAME}
 Export a private key's (encrypted or unencrypted) armor using the following command.
 
 ```bash
-$ gnokey export
+gnokey export
 ```
 
 #### **Options**
@@ -101,7 +101,7 @@ $ gnokey export
 Import a private key's (encrypted or unencrypted) armor with the following command.
 
 ```bash
-$ gnokey import
+gnokey import
 ```
 
 #### **Options**
@@ -125,19 +125,19 @@ $ gnokey import
 Make an ABCI Query with the following command.
 
 ```bash
-$ gnokey query {QUERY_PATH}
+gnokey query {QUERY_PATH}
 ```
 
 #### **Query**
 
 | Query Path                | Description                                                        | Example                                                                                  |
 | ------------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
-| `auth/accounts/{ADDRESS}` | Returns information about an account.                              | `$ gnokey query auth/accounts/g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5`                  |
-| `bank/balances/{ADDRESS}` | Returns balances of an account.                                    | `$ gnokey query bank/balances/g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5`                  |
-| `vm/qfuncs`               | Returns public facing function signatures as JSON.                 | `$ gnokey query vm/qfuncs --data "gno.land/r/demo/boards"`                               |
-| `vm/qfile`                | Returns the file bytes, or list of files if directory.             | `$ gnokey query vm/qfile --data "gno.land/r/demo/boards"`                                |
-| `vm/qrender`              | Calls .Render(\<path>) in readonly mode.                           | `$ gnokey query vm/qrender --data "gno.land/r/demo/boards"`                              |
-| `vm/qeval`                | Evaluates any expression in readonly mode and returns the results. | `$ gnokey query vm/qeval --data "gno.land/r/demo/boards GetBoardIDFromName("my_board")"` |
+| `auth/accounts/{ADDRESS}` | Returns information about an account.                              | `gnokey query auth/accounts/g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5`                  |
+| `bank/balances/{ADDRESS}` | Returns balances of an account.                                    | `gnokey query bank/balances/g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5`                  |
+| `vm/qfuncs`               | Returns public facing function signatures as JSON.                 | `gnokey query vm/qfuncs --data "gno.land/r/demo/boards"`                               |
+| `vm/qfile`                | Returns the file bytes, or list of files if directory.             | `gnokey query vm/qfile --data "gno.land/r/demo/boards"`                                |
+| `vm/qrender`              | Calls .Render(\<path>) in readonly mode.                           | `gnokey query vm/qrender --data "gno.land/r/demo/boards"`                              |
+| `vm/qeval`                | Evaluates any expression in readonly mode and returns the results. | `gnokey query vm/qeval --data "gno.land/r/demo/boards GetBoardIDFromName("my_board")"` |
 | `vm/store`                | (not yet supported) Fetches items from the store.                  | -                                                                                        |
 | `vm/package`              | (not yet supported) Fetches a package's files.                     | -                                                                                        |
 
@@ -158,7 +158,7 @@ $ gnokey query {QUERY_PATH}
 You can sign and broadcast a transaction with the following command.
 
 ```bash
-$ gnokey maketx {SUB_COMMAND} {ADDRESS or KeyName}
+gnokey maketx {SUB_COMMAND} {ADDRESS or KeyName}
 ```
 
 #### **Subcommands**
@@ -174,7 +174,7 @@ $ gnokey maketx {SUB_COMMAND} {ADDRESS or KeyName}
 This subcommand lets you upload a new package.
 
 ```bash
-$ gnokey maketx addpkg \
+gnokey maketx addpkg \
     -deposit="1ugnot" \
     -gas-fee="1ugnot" \
     -gas-wanted="5000000" \
@@ -288,7 +288,7 @@ gnokey maketx send \
 Sign a document with the following command.
 
 ```bash
-$ gnokey sign
+gnokey sign
 ```
 
 #### **Options**
@@ -310,7 +310,7 @@ $ gnokey sign
 Verify a document signature with the following command.
 
 ```bash
-$ gnokey verify
+gnokey verify
 ```
 
 #### **Options**
@@ -324,7 +324,7 @@ $ gnokey verify
 Broadcast a signed document with the following command.
 
 ```bash
-$ gnokey broadcast {signed transaction file document}
+gnokey broadcast {signed transaction file document}
 ```
 
 #### **Example Result**

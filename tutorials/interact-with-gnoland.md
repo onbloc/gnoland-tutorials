@@ -4,24 +4,24 @@ This tutorial will teach you how to interact with the Gnoland blockchain by crea
 
 ## Prerequisites
 
-* [Initial Setup](../docs/environment-setup/initial-setup.md)
+- [Initial Setup](../docs/environment-setup/initial-setup.md)
 
 ## Create an Account
 
 In order to interact with Gnoland, you need an account that you will use to sign and send transactions. You may create a new account with `gnokey generate` or recover an existing one with `gnokey add`. Confirm that your account was successfully added with `gnokey list` to display all accounts registered in the key base of your device.
 
 ```bash
-$ gnokey generate # create a new seed phrase (mnemonic)
+gnokey generate # create a new seed phrase (mnemonic)
 
-$ gnokey add -recover {your_account_name} # registers a key with the name set as the value you put in {your_account_name} with a seed phrase
+gnokey add -recover {your_account_name} # registers a key with the name set as the value you put in {your_account_name} with a seed phrase
 
-$ gnokey list # check the list of keys
+gnokey list # check the list of keys
 ```
 
 ## Register As a User
 
 ```bash
-$ gnokey maketx call \
+gnokey maketx call \
     -gas-fee="1ugnot" \
     -gas-wanted="5000000" \
     -broadcast="true" \
@@ -44,13 +44,13 @@ $ gnokey maketx call \
 
 ```bash
 # Get account information
-$ gnokey query -remote="test3.gno.land:36657" "auth/accounts/{address}"
+gnokey query -remote="test3.gno.land:36657" "auth/accounts/{address}"
 
 # Get account balance
-$ gnokey query -remote="test3.gno.land:36657" "bank/balances/{address}"
+gnokey query -remote="test3.gno.land:36657" "bank/balances/{address}"
 
 # Get /r/demo/boards user information
-$ gnokey query -remote="test3.gno.land:36657" -data "gno.land/r/demo/users
+gnokey query -remote="test3.gno.land:36657" -data "gno.land/r/demo/users
 my_account" "vm/qrender"
 ```
 
@@ -60,7 +60,7 @@ The following command will send 1,000,000 ugnot (= 1 GNOT) to the address specif
 
 ```bash
 # Creates and broadcast a token transfer transaction
-$ gnokey maketx send \
+gnokey maketx send \
     -gas-fee="1ugnot" \
     -gas-wanted="5000000" \
     -broadcast="true" \
@@ -77,7 +77,7 @@ Try creating a board called `my_board` on the `gno.land/r/demo/boards` realm wit
 
 ```bash
 # Calls the CreateBoard function of gno.land/r/demo/boards
-$ gnokey maketx call \
+gnokey maketx call \
     -gas-fee="1ugnot" \
     -gas-wanted="5000000" \
     -broadcast="true" \

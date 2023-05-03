@@ -7,7 +7,7 @@
 The following command will run `gno`.
 
 ```bash
-$ gno {SUB_COMMAND}
+gno {SUB_COMMAND}
 ```
 
 **Subcommands**
