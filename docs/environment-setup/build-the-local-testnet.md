@@ -2,49 +2,24 @@
 
 ### Step 1. Build the Gno Project
 
-Change your working directory to `gno`.
+Change your working directory to `gno/gno.land`.
 
 ```bash
-$ cd gno
+$ cd ~/gno/gno.land/
 ```
 
-<figure><img src="../../.gitbook/assets/2-4.png" alt=""><figcaption></figcaption></figure>
-
-Use the `make` command to build the Gno project.
+Use the `make` command to build the gnoland binary.
 
 ```bash
-$ make
+$ make install.gnoland
 ```
 
 <figure><img src="../../.gitbook/assets/2-5.png" alt=""><figcaption></figcaption></figure>
 
 > **Note:** If you're developing on a Windows device, install the GNU make using this [link](https://gnuwin32.sourceforge.net/packages/make.htm).
 
-### Step 2. Set the Path for Gno Commands
 
-Register environment variables on Mac / Linux with the following command:
-
-```bash
-$ export PATH=$PWD/build:$PATH
-```
-
-If you're using a Windows device, use this command instead:
-
-```bash
-$ set PATH=%cd%/build;%PATH%
-```
-
-### Step 3. Review Options
-
-`gnoland` comes with many options for configuring your network. Check the list with the following command:
-
-```bash
-$ gnoland --help
-```
-
-<figure><img src="../../.gitbook/assets/04_help_gnoland.png" alt=""><figcaption></figcaption></figure>
-
-### Step 4. Run a Local Node
+### Step 2. Run a Local Node
 
 Start a local Gnoland blockchain node with the following command:
 
@@ -58,20 +33,20 @@ $ gnoland
 
 After a few moments, you will start to see blocks being produced on your network.
 
-### Step 5. Build a Web Page (Optional)
+### Step 3. Build a Web Page (Optional)
 
 This section will teach you how to launch your own gno.land web page that will serve as a docs page for your network. Although this section is optional, we highly recommend completing it.
 
 First, build the web page with the following command:
 
 ```
-$ make gnoweb
+$ make install.gnoweb
 ```
 
 Then, run the web page with the following command:
 
 ```
-$ website
+$ gnoweb
 ```
 
 <figure><img src="../../.gitbook/assets/07_build_run_gnoweb.png" alt=""><figcaption></figcaption></figure>
