@@ -17,11 +17,25 @@ Returns the address associated with the signer's public key
 
 Returns **Promise<string>**
 
+#### Usage
+
+```ts
+await signer.getAddress();
+// "g1u7y667z64x2h7vc6fmpcprgey4ck233jaww9zq"
+```
+
 ### getPublicKey
 
 Returns the signer's Secp256k1-compressed public key
 
 Returns **Promise<Uint8Array>**
+
+#### Usage
+
+```ts
+await signer.getPublicKey(dataToSign);
+// <Uint8Array>
+```
 
 ### signData
 
@@ -33,6 +47,15 @@ Generates a data signature for arbitrary input
 
 Returns **Promise<Uint8Array>**
 
+#### Usage
+
+```ts
+const dataToSign: Uint8Array = // ...
+
+await signer.signData(dataToSign);
+// <Uint8Array>
+```
+
 ### verifySignature
 
 Verifies if the signature matches the provided raw data
@@ -43,3 +66,13 @@ Verifies if the signature matches the provided raw data
 * `signature` **Uint8Array** the hashed-data signature
 
 Returns **Promise<boolean>**
+
+#### Usage
+
+```ts
+const signedData: Uint8Array = // ...
+const rawData: Uint8Array = // ...
+
+await signer.verifySignature(rawData, signedData);
+// <Uint8Array>
+```
