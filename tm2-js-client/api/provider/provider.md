@@ -165,7 +165,7 @@ await provider.getBlock(1);
     }
   }
 }
- */
+*/
 ```
 
 ### getBlockResult
@@ -210,7 +210,7 @@ await provider.getBlockResult(1);
     }
   }
 }
- */
+*/
 ```
 
 ### getBlockNumber
@@ -247,7 +247,7 @@ await provider.getNetwork();
   n_peers: "0",
   peers: []
 }
- */
+*/
 ```
 
 ### getConsensusParams
@@ -282,7 +282,7 @@ await provider.getConsensusParams(1);
     }
   }
 }
- */
+*/
 ```
 
 ### getStatus
@@ -352,7 +352,7 @@ await provider.getStatus();
     voting_power: "0"
   }
 }
- */
+*/
 ```
 
 ### getGasPrice
@@ -437,5 +437,5 @@ await provider.waitForTransaction('ZXhhbXBsZSBzaWduZWQgdHJhbnNhY3Rpb24');
    ],
    memo: "check out gno.land!"
 }
- */
+*/
 ```
