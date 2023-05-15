@@ -1,9 +1,10 @@
 # Getting Started
 
-[tm2-js-client](https://github.com/gnolang/tm2-js-client) is a JavaScript/TypeScript client implementation for
+[@gnolang/tm2-js-client](https://github.com/gnolang/tm2-js-client) is a JavaScript/TypeScript client implementation for
 Tendermint2-based chains. It is designed to make it
 easy for developers to interact with TM2 chains, providing a simplified API for account and transaction management. By
-doing all the heavy lifting behind the scenes, `tm2-js-client` enables developers to focus on what really matters -
+doing all the heavy lifting behind the scenes, `@gnolang/tm2-js-client` enables developers to focus on what really
+matters -
 building their dApps.
 
 ## Key Features
@@ -14,14 +15,14 @@ building their dApps.
 
 ## Installation
 
-To install `tm2-js-client`, use your preferred package manager:
+To install `@gnolang/tm2-js-client`, use your preferred package manager:
 
 ```bash
-yarn add tm2-js-client
+yarn add @gnolang/tm2-js-client
 ```
 
 ```bash
-npm install tm2-js-client
+npm install @gnolang/tm2-js-client
 ```
 
 ## Common Terminology
@@ -33,7 +34,7 @@ communicate with it. Rather than requiring users to understand which endpoints a
 and how they are parsed, the `Provider` abstraction handles all of this behind the scenes. It exposes useful API methods
 that users can use and expects concrete types in return.
 
-Currently, the `tm2-js-client` package provides support for two Provider implementations:
+Currently, the `@gnolang/tm2-js-client` package provides support for two Provider implementations:
 
 - `JSON-RPC Provider`: executes each call as a separate HTTP RPC call.
 - `WS Provider`: executes each call through an active WebSocket connection, which requires closing when not needed
@@ -44,7 +45,7 @@ Currently, the `tm2-js-client` package provides support for two Provider impleme
 A `Signer` is an interface that abstracts the interaction with a single Secp256k1 key pair. It exposes methods for
 signing data, verifying signatures, and getting metadata associated with the key pair, such as the address.
 
-Currently, the `tm2-js-client` package provides support for two `Signer` implementations:
+Currently, the `@gnolang/tm2-js-client` package provides support for two `Signer` implementations:
 
 - `Key`: a signer that is based on a raw Secp256k1 key pair.
 - `Ledger`: a signer that is based on a Ledger device, with all interaction flowing through the user's device.

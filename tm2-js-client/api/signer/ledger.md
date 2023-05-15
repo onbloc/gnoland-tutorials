@@ -10,6 +10,7 @@ Creates a new instance of the Ledger device signer, using the provided `LedgerCo
 
 * `connector` **LedgerConnector** the Ledger connector
 * `accountIndex` **number** the desired account index
+* `addressPrefix` **string** the address prefix
 
 #### Usage
 

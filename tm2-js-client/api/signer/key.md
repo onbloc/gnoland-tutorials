@@ -10,6 +10,7 @@ Creates a new instance of the private-key KeySigner
 
 * `privateKey` **Uint8Array** the raw Secp256k1 private key
 * `publicKey` **Uint8Array** the raw Secp256k1 public key
+* `addressPrefix` **string** the address prefix
 
 #### Usage
 

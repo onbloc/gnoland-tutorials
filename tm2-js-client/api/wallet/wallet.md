@@ -14,6 +14,10 @@ about account management.
 
 Generates a private key-based wallet, using a random seed
 
+#### Parameters
+
+* `options?` **AccountWalletOption** the account options
+
 Returns **Promise<Wallet>**
 
 #### Usage
@@ -30,7 +34,7 @@ Generates a bip39 mnemonic-based wallet
 #### Parameters
 
 * `mnemonic` **string** the bip39 mnemonic
-* `accountIndex` **number** the account index (optional, default `0`)
+* `options?` **CreateWalletOptions** the wallet generation options
 
 Returns **Promise<Wallet>**
 
@@ -49,6 +53,7 @@ Generates a private key-based wallet
 #### Parameters
 
 * `privateKey` **string** the private key
+* `options?` **AccountWalletOption** the wallet generation options
 
 Returns **Promise<Wallet>**
 
@@ -72,7 +77,7 @@ Creates a Ledger-based wallet
 #### Parameters
 
 * `connector` **LedgerConnector** the Ledger device connector
-* `accountIndex` **number** the account index (optional, default `0`)
+* `options?` **CreateWalletOptions** the wallet generation options
 
 Returns **Wallet**
 
@@ -100,7 +105,7 @@ Connects the wallet to the specified Provider
 ```ts
 const provider: Provider = // ...
 
-wallet.connect(provider);
+    wallet.connect(provider);
 // Provider connected to Wallet
 ```
 
@@ -212,7 +217,7 @@ Returns **Promise<number>**
 ```ts
 const tx: Tx = // ...
 
-await wallet.estimateGas(tx);
+    await wallet.estimateGas(tx);
 // 120000
 ```
 
@@ -231,7 +236,7 @@ Returns **Promise\<Tx>**
 ```ts
 const tx: Tx = // ...
 
-await wallet.signTransaction(tx);
+    await wallet.signTransaction(tx);
 // transaction with appended signature
 ```
 

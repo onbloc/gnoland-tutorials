@@ -33,7 +33,20 @@ Returns **Promise<Uint8Array>**
 #### Usage
 
 ```ts
-await signer.getPublicKey(dataToSign);
+await signer.getPublicKey();
+// <Uint8Array>
+```
+
+### getPrivateKey
+
+Returns the signer's actual raw private key
+
+Returns **Promise<Uint8Array>**
+
+#### Usage
+
+```ts
+await signer.getPrivateKey();
 // <Uint8Array>
 ```
 
@@ -52,7 +65,7 @@ Returns **Promise<Uint8Array>**
 ```ts
 const dataToSign: Uint8Array = // ...
 
-await signer.signData(dataToSign);
+    await signer.signData(dataToSign);
 // <Uint8Array>
 ```
 
@@ -73,6 +86,6 @@ Returns **Promise<boolean>**
 const signedData: Uint8Array = // ...
 const rawData: Uint8Array = // ...
 
-await signer.verifySignature(rawData, signedData);
+    await signer.verifySignature(rawData, signedData);
 // <Uint8Array>
 ```
