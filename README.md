@@ -45,7 +45,7 @@ You can read the docs in [Gitbook](https://onbloc.gitbook.io/gnoland-developer-p
     - [Build the Local Testnet](docs/environment-setup/build-the-local-testnet.md)
   - [Gnoland RPC Endpoints](docs/gnoland-rpc-endpoints.md)
   - [tm2-js-client](docs/tm2-js-client/README.md)
-    - [Getting Started](getting-started.md)
+    - [Getting Started](docs/tm2-js-client/getting-started.md)
     - [Provider](docs/tm2-js-client/provider/README.md)
       - [JSON-RPC-Provider](docs/tm2-js-client/provider/json-rpc-provider.md)
       - [Provider](docs/tm2-js-client/provider/provider.md)
