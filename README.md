@@ -44,6 +44,7 @@ You can read the docs in [Gitbook](https://onbloc.gitbook.io/gnoland-developer-p
     - [Initial Setup](docs/environment-setup/initial-setup.md)
     - [Build the Local Testnet](docs/environment-setup/build-the-local-testnet.md)
   - [Gnoland RPC Endpoints](docs/gnoland-rpc-endpoints.md)
+  - [tm2-js-client](docs/tm2-js-client/)
 - Tutorials
   - [Interact with Gnoland](tutorials/interact-with-gnoland.md)
   - [Start Writing a Realm](tutorials/start-writing-a-realm.md)
