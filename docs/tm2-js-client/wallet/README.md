@@ -1,3 +1,0 @@
-# Wallet
-
-* [Wallet](wallet.md)

@@ -55,8 +55,7 @@ You can read the docs in [Gitbook](https://onbloc.gitbook.io/gnoland-developer-p
       - [Signer](docs/tm2-js-client/signer/signer.md)
       - [Key](docs/tm2-js-client/signer/key.md)
       - [Ledger](docs/tm2-js-client/signer/ledger.md)
-    - [Wallet](docs/tm2-js-client/wallet/README.md)
-      - [Wallet](docs/tm2-js-client/wallet/wallet.md)
+    - [Wallet](docs/tm2-js-client/wallet.md)
   - [gno-js-client](docs/gno-js-client/README.md)
 - Tutorials
   - [Interact with Gnoland](tutorials/interact-with-gnoland.md)
