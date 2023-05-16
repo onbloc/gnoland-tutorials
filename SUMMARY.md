@@ -13,7 +13,6 @@
 
 ## Docs
 
-* [123](docs/123.md)
 * [Terminology](docs/terminology.md)
 * [Standard Libraries](docs/standard-libraries.md)
 * [Packages](docs/packages.md)
