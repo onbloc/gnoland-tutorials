@@ -3,7 +3,7 @@
 This section will provide an overview and basic features of tm2-js-client.
 
 * [Getting-started](getting-started.md)
-* [provider](provider.md)
-* [signer](signer.md)
-* [wallet](wallet.md)
+* [provider](provider/)
+* [signer](signer/)
+* [wallet](wallet/)
 
