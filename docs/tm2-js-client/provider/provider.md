@@ -11,8 +11,6 @@ Currently, the `tm2-js-client` package provides support for two Provider impleme
 - [WS Provider](ws-provider.md): executes each call through an active WebSocket connection, which requires closing when
   not needed anymore.
 
-Read-only abstraction for accessing blockchain data
-
 ## Account Methods
 
 ### getBalance
