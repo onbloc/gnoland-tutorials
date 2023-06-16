@@ -53,7 +53,7 @@
   * [Wallet](docs/tm2-js-client/wallet.md)
 * [gno-js-client](docs/gno-js-client/README.md)
   * [Getting Started](docs/gno-js-client/getting-started.md)
-  * [Provider](docs/gno-js-client/gno-provider.md/)
+  * [Provider](docs/gno-js-client/gno-provider.md)
   * [Wallet](docs/gno-js-client/gno-wallet.md)
 
 ## Tutorials
