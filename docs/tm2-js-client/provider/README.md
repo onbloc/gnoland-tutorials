@@ -1,6 +1,6 @@
 # Provider
 
-* [json-rpc-provider](json-rpc-provider.md)
 * [Provider](provider.md)
+* [JSON-RPC Provider](json-rpc-provider.md)
+* [WS Provider](ws-provider.md)
 * [Utility](utility.md)
-* [Ws-provider](ws-provider.md)
