@@ -14,7 +14,7 @@ Soon after Bitcoin, others began launching their own blockchains with added func
 
 While Ethereum significantly lowered the costs and time associated with dapp development, other issues emerged - the structure of Ethereum forced users to compete for resources of Ethereum, resulting in low speed and high transaction fees. Although this design was intentional to lower the hardware requirements for nodes, the tradeoff between decentralization and scalability ended up in an unappealing environment for developers looking for a fast and performant blockchain solution that didn't require an application to share resources with each other.
 
-Out of the demand for sovereignty, flexibility and sovereignty came Cosmos, a novel tech stack that consists of 3 main components:
+Out of the demand for interoperability, flexibility and sovereignty came Cosmos, a novel tech stack that consists of 3 main components:
 
 1. Tendermint: A highly performant consensus layer that replaces Proof-of-Work with Proof-of-Stake, where block validation rights are earned in proportion to the node’s “stake” of each native asset.
 2. Cosmos-SDK: A modular SDK that remarkably simplifies blockchain development.
