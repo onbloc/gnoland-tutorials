@@ -8,6 +8,12 @@ Start a node on the Gnoland blockchain with the following command.
 gnoland
 ```
 
+### **Sub Commands**
+| Command   | Description       |
+| --------- | ----------------- |
+| `start`   | Run the full node |
+
+
 ### **Options**
 
 | Name                       | Type    | Description                                                                             |
