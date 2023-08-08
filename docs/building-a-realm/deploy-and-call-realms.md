@@ -1,11 +1,11 @@
 # Deploy and Call Realms
 
-There are two methods of deploying and calling realms.
+There are two methods of deploying and calling realms:
 
-1. With the blockchain: You can use the subcommands of [`gnokey`](../cli/gnokey.md) such as [`addpkg`](../cli/gnokey.md#subcommands), to deploy a realm to the Gnoland blockchain, and [`maketx call`](../cli/gnokey.md#call), to call available realms in the Gnoland blockchain.
-2. Without a blockchain: You can use [`gno`](../cli/gno.md), which allows you to use the GnoVM without a blockchain in a local environment. This method is fast and allows you to use development patterns such as TDD. However, it does not facilitate the capability for external parties to participate in testing since it's done locally.
+1. With a blockchain: You can use the subcommands of [`gnokey`](../cli/gnokey.md) such as [`addpkg`](../cli/gnokey.md#subcommands) to deploy a realm to the Gnoland blockchain and [`maketx call`](../cli/gnokey.md#call) to call available realms in the Gnoland blockchain.
+2. Without a blockchain: You can use the [`gno`](../cli/gno.md), a CLI which allows you to use the GnoVM in a local environment (ie, without a blockchain). This method is fast and allows development patterns such as [TDD](https://en.wikipedia.org/wiki/Test-driven_development); however, it does not facilitate the capability for external parties to participate in testing since everything is done locally.
 
-This section covers how to deploy and call realms with the first method - With the blockchain.
+This section covers how to deploy and call realms with the first method: With a blockchain.
 
 ## Deploy
 
@@ -25,6 +25,6 @@ This method will execute a transaction to call a function in a realm. Note that 
 
 ### Method 2. `gnokey query`
 
-This method is only for viewing the state of realms. Use this method for calling non-state-changing functions, as it does not consume any gas.
+This method is only for viewing the state of realms. Use this method for calling non-state-changing functions as it does not consume any gas.
 
 <figure><img src="../../.gitbook/assets/17_gnokey_query.png" alt=""><figcaption></figcaption></figure>
