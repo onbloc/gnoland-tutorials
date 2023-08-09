@@ -12,7 +12,7 @@ func Hello(name string) string {
 }
 ```
 
-Although concrete data types of Golang are supported, `avl` packages must be used since `map` is unusable due to non-determinism.
+> **Note:** Although concrete data types of Golang are supported, the [`avl`](https://github.com/gnolang/gno/tree/master/examples/gno.land/p/demo/avl) package must be used since `map` is unusable due to its non-deterministic properties.
 
 ## Data Handling
 
@@ -55,15 +55,15 @@ func Render(path string) string {
 }
 ```
 
-The sample code above imports the `avl` package and the `dom` package.
+The sample code above imports the `avl` and `dom` packages by their respective package paths.
 
 ## Access Modifier
 
 In Gnolang, the distinction of access modifiers is based on the naming conventions of objects.
 
 * Starting with an uppercase
-  * Can be externally which means `Public`
-  * Similar to `public` and `external` in Solidity
+  * Can be externally accessed, representing: `Public`
+  * Similar to the `public` and `external` modifiers in Solidity
 * Starting with a lowercase
-  * Cannot be externally accessed which means `Private`
-  * Similar to `private` and `internal` in Solidity
+  * Cannot be externally accessed, representing: `Private`
+  * Similar to the `private` and `internal` modifiers in Solidity
