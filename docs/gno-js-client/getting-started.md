@@ -1,6 +1,6 @@
 # Getting Started
 
-`@gnolang/gno-js-client` is a JavaScript/TypeScript client implementation for Gno chains. It is an extension of the
+[@gnolang/gno-js-client](https://github.com/gnolang/gno-js-client) is a JavaScript/TypeScript client implementation for Gno chains. It is an extension of the
 [tm2-js-client](https://github.com/gnolang/tm2-js-client), but with Gno-specific functionality.
 
 ## Key Features
