@@ -1,5 +1,7 @@
 # Gnoland Developer Portal
 
+### ***Gnoland Developer Portal has been merged into the [Official Gno Docs](https://docs.gno.land/) and this repository is depreciated.***
+
 Welcome to the Gnoland Developer Portal!
 
 The purpose of this guide is to invite new developers into the world of Gnolang, a new programming language powering the Gnoland blockchain, by providing all the resources you need to become a Gnolang expert.
